@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>실험실 소개 | 바이오시스템 모델링 및 분석 실험실</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+
+  .greeting-grid { display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: stretch; }
+  .prof-photo { height: 100%; min-height: 420px; }
+  .greeting-body .g-name { font-size: 22px; font-weight: 600; letter-spacing: -.02em; }
+  .greeting-body .g-name-en { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .greeting-body .rule { height: 1px; background: var(--ink); width: 68px; margin: 22px 0 30px; }
+  .greeting-body p { font-size: 15px; line-height: 1.85; margin-bottom: 20px; }
+  .greeting-body .signature { margin-top: 36px; font-size: 14px; color: var(--ink); }
+  .greeting-body .signature strong { font-weight: 600; }
+  .link-row { margin-top: 40px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .link-row .btn { padding: 11px 22px; font-size: 12.5px; }
+
+  .info-row {
+    display: flex; gap: 28px; padding: 17px 0;
+    border-bottom: 1px solid var(--line); font-size: 14px;
+  }
+  .info-row:first-of-type { border-top: 1px solid var(--line); }
+  .info-label { min-width: 96px; color: var(--muted); font-size: 12.5px; padding-top: 2px; }
+
+  .map-frame {
+    width: 100%; height: 380px; border: 1px solid var(--line);
+    margin-top: 8px; display: block;
+  }
+  .map-link { display: inline-block; margin-top: 14px; font-size: 13px; color: var(--muted); }
+  .map-link:hover { color: var(--ink); }
+
+  @media (max-width: 900px) {
+    .greeting-grid { grid-template-columns: 1fr; gap: 32px; }
+    .prof-photo { max-width: 240px; }
+    .greeting-body .g-name { font-size: 19px; }
+    .info-row { flex-direction: column; gap: 4px; }
+    .map-frame { height: 280px; }
+  }
+</style>
+</head>
+<body data-lang="ko">
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-affil">
+      <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
+      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+    </span>
+    <strong>
+      <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
+      <span class="en">Biosystems Modeling and Analysis Laboratory</span>
+    </strong>
+  </a>
+  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+  <nav class="gnb">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="news.html">News</a>
+    <span class="lang-switch">
+      <button onclick="setLang('ko')" id="btn-ko" class="on">KR</button> /
+      <button onclick="setLang('en')" id="btn-en">EN</button>
+    </span>
+  </nav>
+</header>
+<main class="page-head">
+  <div class="wrap">
+    <div class="page-top">
+      <div class="section-label">About</div>
+      <h1 class="page-title">
+        <span class="ko">실험실 소개</span>
+        <span class="en">About</span>
+      </h1>
+    </div>
+    <div class="subpage">
+      <aside class="side-toc">
+        <div class="toc-label">On this page</div>
+        <a href="#greeting">Greeting</a>
+        <a href="#contact">Contact</a>
+        <a href="#map">Directions</a>
+      </aside>
+      <div class="subpage-body">
+        <section id="greeting">
+          <h2>Greeting</h2>
+          <div class="h2-en ko">인사말</div>
+          <div class="greeting-grid">
+            <div class="ph prof-photo">PHOTO</div>
+            <div class="greeting-body">
+              <div class="g-name">
+                <span class="ko">이왕희</span>
+                <span class="en">Wang-Hee Lee</span>
+              </div>
+              <div class="g-name-en">Wang-Hee Lee, Ph.D. &middot; Professor</div>
+              <div class="rule"></div>
+              <p>
+                인사말 첫 문단이 이 자리에 들어갑니다. 실험실을 찾아준 방문자에 대한 환영과,
+                실험실이 어떤 질문을 붙들고 있는지에 대한 짧은 소개를 담습니다.
+              </p>
+              <p>
+                두 번째 문단에는 연구 철학이나 지향점이 들어갑니다. 어떤 자세로 연구를 대하는지,
+                학생들과 무엇을 함께 만들어가고자 하는지를 이야기합니다.
+              </p>
+              <p>
+                마지막 문단에는 함께할 사람에 대한 이야기를 담습니다. 어떤 관심과 준비를 가진
+                학생을 기다리는지, 그리고 연락은 어떻게 하면 되는지를 안내합니다.
+              </p>
+              <div class="signature">
+                <span class="ko">바이오시스템 모델링 및 분석 실험실 &middot; <strong>이왕희</strong></span>
+                <span class="en">Biosystems Modeling and Analysis Laboratory &middot; <strong>Wang-Hee Lee</strong></span>
+              </div>
+              <div class="link-row">
+                <a href="#" class="btn ghost">Google Scholar</a>
+                <a href="#" class="btn ghost">ResearchGate</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <div class="h2-en ko">연락처</div>
+          <div class="info-row">
+            <div class="info-label">실험실</div>
+            <div>바이오시스템 모델링 및 분석 실험실<br>
+                 <span style="color:var(--muted); font-size:13px;">Biosystems Modeling and Analysis Laboratory</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">소속</div>
+            <div>충남대학교 스마트농업시스템기계공학과</div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">주소</div>
+            <div>대전광역시 유성구 대학로 99<br>농업생명과학대학 2호관(E10-2) 2107호</div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">전화</div>
+            <div>+82-42-821-7869</div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">이메일</div>
+            <div style="color:var(--muted);">이메일 주소 확인 필요</div>
+          </div>
+        </section>
+        <section id="map">
+          <h2>Directions</h2>
+          <div class="h2-en ko">오시는 길</div>
+          <iframe
+            class="map-frame"
+            src="https://www.google.com/maps?q=%EC%B6%A9%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20%EB%86%8D%EC%97%85%EC%83%9D%EB%AA%85%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%202%ED%98%B8%EA%B4%80&hl=ko&z=17&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="충남대학교 농업생명과학대학 2호관 위치"></iframe>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%EC%B6%A9%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20%EB%86%8D%EC%97%85%EC%83%9D%EB%AA%85%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%202%ED%98%B8%EA%B4%80" target="_blank" rel="noopener">
+            <span class="ko">구글 지도에서 크게 보기 &rarr;</span>
+            <span class="en">Open in Google Maps &rarr;</span>
+          </a>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-name">
+      <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
+      <span class="en">Biosystems Modeling and Analysis Laboratory</span>
+    </div>
+    <p>충남대학교 스마트농업시스템기계공학과</p>
+    <p>대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</p>
+    <p>Tel. +82-42-821-7869</p>
+    <p style="margin-top:14px;">&copy; 2026 Biosystems Modeling and Analysis Laboratory. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  function toggleMenu() {
+    document.querySelector('.gnb').classList.toggle('open');
+  }
+  function setLang(lang) {
+    document.body.dataset.lang = lang;
+    var ko = document.getElementById('btn-ko'), en = document.getElementById('btn-en');
+    if (ko && en) {
+      ko.classList.toggle('on', lang === 'ko');
+      en.classList.toggle('on', lang === 'en');
+    }
+  }
+  (function () {
+    var links = document.querySelectorAll('.side-toc a[href^="#"]');
+    if (!links.length) return;
+    var targets = [];
+    links.forEach(function (a) {
+      var el = document.getElementById(a.getAttribute('href').slice(1));
+      if (el) targets.push({ link: a, el: el });
+    });
+    function onScroll() {
+      var y = window.scrollY + 160, current = null;
+      targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t.link; });
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (current) current.classList.add('active');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+</body>
+</html>

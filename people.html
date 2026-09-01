@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>구성원 | 바이오시스템 모델링 및 분석 실험실</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+
+  .member-list { display: grid; grid-template-columns: 1fr; gap: 48px; }
+  .member-head { display: grid; grid-template-columns: 96px 1fr; gap: 18px; align-items: start; }
+  .member-body { margin-top: 24px; }
+  .prof-block { display: grid; grid-template-columns: 160px 1fr; gap: 34px; align-items: start; }
+
+  .photo { aspect-ratio: 3 / 4; }
+  .m-name { font-size: 15.5px; font-weight: 600; letter-spacing: -.01em; }
+  .m-name-en { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+  .m-role {
+    display: inline-block; margin-top: 9px; font-size: 11.5px; color: var(--muted);
+    border: 1px solid var(--line); border-radius: 2px; padding: 3px 9px;
+  }
+  .m-email { margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+  .member ul, .prof-block ul { list-style: none; margin-top: 0; padding-left: 0; }
+  .member ul li, .prof-block ul li {
+    font-size: 13.5px; color: var(--ink-soft); line-height: 1.7;
+    padding-left: 12px; position: relative; margin-bottom: 5px;
+  }
+  .member ul li::before, .prof-block ul li::before {
+    content: "\2013"; position: absolute; left: 0; color: var(--muted);
+  }
+  .prof-block ul { margin-top: 12px; }
+  .m-pub { margin-top: 16px; font-size: 12.5px; color: var(--muted); line-height: 1.65; }
+  .m-pub span.lbl { display: block; color: #a8a8a8; margin-bottom: 2px; }
+
+  .prof-block .m-name { font-size: 20px; }
+
+  .prof-cv { margin-top: 44px; }
+  .cv-head {
+    font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 14px;
+  }
+  .cv-item {
+    display: flex; gap: 32px; padding: 11px 0;
+    border-bottom: 1px solid var(--line); font-size: 13.5px; color: var(--ink-soft);
+  }
+  .cv-item:first-of-type { border-top: 1px solid var(--line); }
+  .cv-deg { min-width: 110px; color: var(--muted); font-size: 12.5px; padding-top: 1px; }
+
+  .alumni-item {
+    display: flex; gap: 22px; padding: 14px 0;
+    border-bottom: 1px solid var(--line); font-size: 13.5px;
+  }
+  .alumni-item:first-of-type { border-top: 1px solid var(--line); }
+  .alumni-item .a-role { min-width: 96px; color: var(--muted); font-size: 12.5px; padding-top: 1px; }
+  .alumni-item .a-name-en { color: var(--muted); font-size: 12.5px; }
+
+  @media (max-width: 900px) {
+    .member-list { gap: 36px; }
+    .prof-block { grid-template-columns: 120px 1fr; gap: 20px; }
+    .cv-item, .alumni-item { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body data-lang="ko">
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-affil">
+      <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
+      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+    </span>
+    <strong>
+      <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
+      <span class="en">Biosystems Modeling and Analysis Laboratory</span>
+    </strong>
+  </a>
+  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+  <nav class="gnb">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="people.html" class="active">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="news.html">News</a>
+    <span class="lang-switch">
+      <button onclick="setLang('ko')" id="btn-ko" class="on">KR</button> /
+      <button onclick="setLang('en')" id="btn-en">EN</button>
+    </span>
+  </nav>
+</header>
+<main class="page-head">
+  <div class="wrap">
+    <div class="page-top">
+      <div class="section-label">People</div>
+      <h1 class="page-title">
+        <span class="ko">구성원</span>
+        <span class="en">People</span>
+      </h1>
+    </div>
+    <div class="subpage">
+      <aside class="side-toc">
+        <div class="toc-label">On this page</div>
+        <a href="#professor">Professor</a>
+        <a href="#postdoc">Postdoctoral Researcher</a>
+        <a href="#phd">Doctoral Course</a>
+        <a href="#ms">Master&#39;s Course</a>
+        <a href="#bs">Undergraduate Researcher</a>
+        <a href="#alumni">Alumni</a>
+      </aside>
+      <div class="subpage-body">
+        <section id="professor">
+          <h2>Professor</h2>
+          <div class="h2-en ko">지도교수</div>
+          <div class="prof-block">
+            <div class="ph photo">PHOTO</div>
+            <div>
+              <div class="m-name">이왕희</div>
+              <div class="m-name-en">Wang-Hee Lee, Ph.D. &middot; Professor</div>
+              <span class="m-role">지도교수</span>
+              <ul>
+                <li>바이오시스템 모델링 및 모델기반 시스템/데이터 분석</li>
+                <li>수학-통계-시뮬레이션 기반 농업/식품/축산/환경/생태 데이터 분석</li>
+                <li>종분포 모델링을 이용한 기후변화대응 해충 잠재적 분포 예측</li>
+                <li>공간분석기법을 활용한 농업 생태 위험성 분석</li>
+              </ul>
+            </div>
+          </div>
+          <div class="prof-cv">
+            <div class="cv-head">Education</div>
+            <div class="cv-item">
+              <span class="cv-deg">B.S.</span>
+              <span>
+                <span class="ko">서울대학교 생물자원공학부</span>
+                <span class="en">School of Biological Resources, Seoul National University</span>
+              </span>
+            </div>
+            <div class="cv-item">
+              <span class="cv-deg">M.S.</span>
+              <span>Agricultural and Biological Engineering, Purdue University, USA</span>
+            </div>
+            <div class="cv-item">
+              <span class="cv-deg">Ph.D.</span>
+              <span>Agricultural and Biological Engineering, Purdue University, USA</span>
+            </div>
+            <div class="cv-item">
+              <span class="cv-deg">Post-doc.</span>
+              <span>Laboratory for Biological Systems Analysis, Georgia Institute of Technology, USA</span>
+            </div>
+            <div class="cv-item">
+              <span class="cv-deg">
+                <span class="ko">현재</span><span class="en">Present</span>
+              </span>
+              <span>
+                <span class="ko">충남대학교 스마트농업시스템기계공학과 교수</span>
+                <span class="en">Professor, Smart Agriculture Systems Mechanical Engineering, CNU</span>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section id="postdoc">
+          <h2>Postdoctoral Researcher</h2>
+          <div class="h2-en ko">박사후연구원</div>
+          <div class="member-list">
+            <div class="member">
+              <div class="member-head">
+                <div class="ph photo">PHOTO</div>
+                <div>
+                  <div class="m-name">정재민</div>
+                  <div class="m-name-en">Jae-Min Jung, Ph.D.</div>
+                  <span class="m-role">박사후연구원</span>
+                  <div class="m-email">이메일 주소 확인 필요</div>
+                </div>
+              </div>
+              <div class="member-body">
+                <ul>
+                  <li>인공지능 기반 외래 침입종 발생 위험 예측 모델 개발</li>
+                  <li>IoT 센서 기반 농산물 가공 시스템 모니터링 및 고도화</li>
+                </ul>
+                <div class="m-pub">
+                  <span class="lbl">대표논문</span>
+                  Development of a predictive model for soil temperature and its application to species distribution modeling of ant species in South Korea
+                </div>
+              </div>
+            </div>
+            <div class="member">
+              <div class="member-head">
+                <div class="ph photo">PHOTO</div>
+                <div>
+                  <div class="m-name">변대현</div>
+                  <div class="m-name-en">Dae-Hyeon Byeon, Ph.D.</div>
+                  <span class="m-role">박사후연구원</span>
+                  <div class="m-email">이메일 주소 확인 필요</div>
+                </div>
+              </div>
+              <div class="member-body">
+                <ul>
+                  <li>토마토뿔나방의 생물적 특성 구명 및 방제기술 개발</li>
+                  <li>최적 종분포 모델링 알고리즘 선정 표준화 프로세스 개발</li>
+                </ul>
+                <div class="m-pub">
+                  <span class="lbl">대표논문</span>
+                  Review of CLIMEX and MaxEnt for studying species distribution in South Korea
+                </div>
+              </div>
+            </div>
+            <div class="member">
+              <div class="member-head">
+                <div class="ph photo">PHOTO</div>
+                <div>
+                  <div class="m-name">윤선희</div>
+                  <div class="m-name-en">Sunhee Yoon, Ph.D.</div>
+                  <span class="m-role">박사후연구원</span>
+                  <div class="m-email">이메일 주소 확인 필요</div>
+                </div>
+              </div>
+              <div class="member-body">
+                <ul>
+                  <li>포도피어슨병의 매개충에 대한 생태적 위험평가</li>
+                  <li>시계열 데이터 기반 인공지능 종분포 모델링 기술 개발</li>
+                </ul>
+                <div class="m-pub">
+                  <span class="lbl">대표논문</span>
+                  Risk monitoring of pine wilt disease based on semi-dynamic spatial prediction in South Korea
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="phd">
+          <h2>Doctoral Course</h2>
+          <div class="h2-en ko">박사과정 &middot; 석박통합과정</div>
+          <div class="member-list">
+            <div class="member">
+              <div class="member-head">
+                <div class="ph photo">PHOTO</div>
+                <div>
+                  <div class="m-name">송재우</div>
+                  <div class="m-name-en">Jae-Woo Song</div>
+                  <span class="m-role">박사수료</span>
+                  <div class="m-email">이메일 주소 확인 필요</div>
+                </div>
+              </div>
+              <div class="member-body">
+                <ul>
+                  <li>자율형 한우 스마트 축사 통합관리를 위한 모델 개발</li>
+                  <li>무인자율형 젖소 사양 관리를 위한 예측 모델 개발</li>
+                </ul>
+                <div class="m-pub">
+                  <span class="lbl">대표논문</span>
+                  Development of individual models for predicting cow milk production for real-time monitoring
+                </div>
+              </div>
+            </div>
+            <div class="member">
+              <div class="member-head">
+                <div class="ph photo">PHOTO</div>
+                <div>
+                  <div class="m-name">김가영</div>
+                  <div class="m-name-en">Ga-Young Kim</div>
+                  <span class="m-role">박사수료</span>
+                  <div class="m-email">이메일 주소 확인 필요</div>
+                </div>
+              </div>
+              <div class="member-body">
+                <ul>
+                  <li>밀 재배 안정성 향상을 위한 국내 밀 재배적지 공간 분석</li>
+                  <li>검역 병원체의 매개충에 대한 생태적 위험 평가</li>
+                </ul>
+                <div class="m-pub">
+                  <span class="lbl">대표논문</span>
+                  Regional predictions of subterranean ant Pheidole megacephala distribution based on a global ensemble species distribution model incorporating climate and soil temperature
+                </div>
+              </div>
+            </div>
+            <div class="member">
+              <div class="member-head">
+                <div class="ph photo">PHOTO</div>
+                <div>
+                  <div class="m-name">김동현</div>
+                  <div class="m-name-en">Dong-Hyeon Kim</div>
+                  <span class="m-role">석박통합과정</span>
+                  <div class="m-email">이메일 주소 확인 필요</div>
+                </div>
+              </div>
+              <div class="member-body">
+                <ul>
+                  <li>Bio-ICT 활용 한우/젖소 개체 식별 및 지능형 사양관리 솔루션 상용화</li>
+                  <li>IoT 센서 기반 농산물 가공 시스템 모니터링 및 고도화</li>
+                </ul>
+                <div class="m-pub">
+                  <span class="lbl">대표논문</span>
+                  Multi-Stage Data Processing for Enhancing Korean Cattle (Hanwoo) Weight Estimations by Automated Weighing Systems
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="ms">
+          <h2>Master&#39;s Course</h2>
+          <div class="h2-en ko">석사과정 &middot; 학석통합과정</div>
+          <div class="member-list">
+            <div class="member">
+              <div class="member-head">
+                <div class="ph photo">PHOTO</div>
+                <div>
+                  <div class="m-name">이우경</div>
+                  <div class="m-name-en">Woo-Kyong Lee</div>
+                  <span class="m-role">학석통합과정</span>
+                  <div class="m-email">이메일 주소 확인 필요</div>
+                </div>
+              </div>
+              <div class="member-body">
+                <ul>
+                  <li>축우 예측 모델 및 의사결정지원 모델 개발</li>
+                  <li>식물 이차 대사 산물 네트워크 구축 및 AI 기반 모델 개발</li>
+                </ul>
+                <div class="m-pub">
+                  <span class="lbl">대표논문</span>
+                  Analysis of the spread distance of pine wilt disease based on a high volume of spatiotemporal data recording of infected trees
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="bs">
+          <h2>Undergraduate Researcher</h2>
+          <div class="h2-en ko">학부연구생</div>
+          <div class="member-list">
+            <div class="member">
+              <div class="member-head">
+                <div class="ph photo">PHOTO</div>
+                <div>
+                  <div class="m-name">최도혁</div>
+                  <div class="m-name-en">Dohyeok Choi</div>
+                  <span class="m-role">학사과정</span>
+                  <div class="m-email">이메일 주소 확인 필요</div>
+                </div>
+              </div>
+              <div class="member-body">
+                <ul>
+                  <li>인공지능 기반 종분포 모델 개발을 위한 DB 구축</li>
+                  <li>IoT 센서 기반 농산물 가공 시스템 모니터링 및 고도화</li>
+                </ul>
+                <div class="m-pub">
+                  <span class="lbl">대표논문</span>
+                  Development and Optimization of a Real-Time Monitoring System of Small-Scale Multi-Purpose Juice Extractor
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="alumni">
+          <h2>Alumni</h2>
+          <div class="h2-en ko">졸업생</div>
+          <div class="alumni-item">
+            <span class="a-role">석사</span>
+            <span>김태현 <span class="a-name-en">Tae-Hyeon Kim</span></span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-name">
+      <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
+      <span class="en">Biosystems Modeling and Analysis Laboratory</span>
+    </div>
+    <p>충남대학교 스마트농업시스템기계공학과</p>
+    <p>대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</p>
+    <p>Tel. +82-42-821-7869</p>
+    <p style="margin-top:14px;">&copy; 2026 Biosystems Modeling and Analysis Laboratory. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  function toggleMenu() {
+    document.querySelector('.gnb').classList.toggle('open');
+  }
+  function setLang(lang) {
+    document.body.dataset.lang = lang;
+    var ko = document.getElementById('btn-ko'), en = document.getElementById('btn-en');
+    if (ko && en) {
+      ko.classList.toggle('on', lang === 'ko');
+      en.classList.toggle('on', lang === 'en');
+    }
+  }
+  (function () {
+    var links = document.querySelectorAll('.side-toc a[href^="#"]');
+    if (!links.length) return;
+    var targets = [];
+    links.forEach(function (a) {
+      var el = document.getElementById(a.getAttribute('href').slice(1));
+      if (el) targets.push({ link: a, el: el });
+    });
+    function onScroll() {
+      var y = window.scrollY + 160, current = null;
+      targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t.link; });
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (current) current.classList.add('active');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+</body>
+</html>
