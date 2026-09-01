@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>실험실 소식 | 바이오시스템 모델링 및 분석 실험실</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+
+  .notice {
+    border: 1px solid var(--line); background: var(--bg-alt);
+    padding: 18px 22px; font-size: 13.5px; color: var(--muted);
+    margin-bottom: 36px; line-height: 1.7;
+  }
+  .news-year { font-size: 12px; letter-spacing: .16em; color: var(--muted); margin: 0 0 14px; }
+  .n-item {
+    display: flex; gap: 24px; padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .n-item:first-of-type { border-top: 1px solid var(--line); }
+  .n-date { min-width: 86px; color: var(--muted); font-size: 12.5px; padding-top: 2px; }
+  .n-cat {
+    display: inline-block; font-size: 11.5px; color: var(--muted);
+    border: 1px solid var(--line); border-radius: 2px; padding: 2px 8px; margin-right: 8px;
+  }
+  .n-text { font-size: 14.5px; color: var(--ink-soft); }
+  @media (max-width: 900px) {
+    .n-item { flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body data-lang="ko">
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-affil">
+      <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
+      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+    </span>
+    <strong>
+      <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
+      <span class="en">Biosystems Modeling and Analysis Laboratory</span>
+    </strong>
+  </a>
+  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+  <nav class="gnb">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="news.html" class="active">News</a>
+    <span class="lang-switch">
+      <button onclick="setLang('ko')" id="btn-ko" class="on">KR</button> /
+      <button onclick="setLang('en')" id="btn-en">EN</button>
+    </span>
+  </nav>
+</header>
+<main class="page-head">
+  <div class="wrap">
+    <div class="page-top">
+      <div class="section-label">News</div>
+      <h1 class="page-title">
+        <span class="ko">실험실 소식</span>
+        <span class="en">News</span>
+      </h1>
+    </div>
+    <div class="subpage">
+      <aside class="side-toc">
+        <div class="toc-label">Archive</div>
+        <a href="#y2026">2026</a>
+        <a href="#y2025">2025</a>
+      </aside>
+      <div class="subpage-body">
+        <section id="y2026">
+          <div class="notice">
+            아래 항목은 <strong>형식을 보여주기 위한 예시</strong>입니다. 실제 소식 목록을 받으면 그대로 교체하겠습니다.
+            각 항목은 <strong>날짜 &middot; 분류 &middot; 내용</strong> 세 가지만 있으면 추가할 수 있습니다.
+          </div>
+          <h2>2026</h2>
+          <div style="height:26px;"></div>
+          <div class="n-item">
+            <div class="n-date">2026.00.00</div>
+            <div class="n-text"><span class="n-cat">논문</span>논문 게재 소식이 이 자리에 들어갑니다</div>
+          </div>
+          <div class="n-item">
+            <div class="n-date">2026.00.00</div>
+            <div class="n-text"><span class="n-cat">수상</span>학회 우수발표상 등 수상 소식이 들어갑니다</div>
+          </div>
+          <div class="n-item">
+            <div class="n-date">2026.00.00</div>
+            <div class="n-text"><span class="n-cat">공지</span>신입 대학원생 모집 등 공지가 들어갑니다</div>
+          </div>
+        </section>
+        <section id="y2025">
+          <h2>2025</h2>
+          <div style="height:26px;"></div>
+          <div class="n-item">
+            <div class="n-date">2025.00.00</div>
+            <div class="n-text"><span class="n-cat">학술대회</span>학술대회 참가 소식이 이 자리에 들어갑니다</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-name">
+      <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
+      <span class="en">Biosystems Modeling and Analysis Laboratory</span>
+    </div>
+    <p>충남대학교 스마트농업시스템기계공학과</p>
+    <p>대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</p>
+    <p>Tel. +82-42-821-7869</p>
+    <p style="margin-top:14px;">&copy; 2026 Biosystems Modeling and Analysis Laboratory. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  function toggleMenu() {
+    document.querySelector('.gnb').classList.toggle('open');
+  }
+  function setLang(lang) {
+    document.body.dataset.lang = lang;
+    var ko = document.getElementById('btn-ko'), en = document.getElementById('btn-en');
+    if (ko && en) {
+      ko.classList.toggle('on', lang === 'ko');
+      en.classList.toggle('on', lang === 'en');
+    }
+  }
+  (function () {
+    var links = document.querySelectorAll('.side-toc a[href^="#"]');
+    if (!links.length) return;
+    var targets = [];
+    links.forEach(function (a) {
+      var el = document.getElementById(a.getAttribute('href').slice(1));
+      if (el) targets.push({ link: a, el: el });
+    });
+    function onScroll() {
+      var y = window.scrollY + 160, current = null;
+      targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t.link; });
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (current) current.classList.add('active');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+</body>
+</html>
