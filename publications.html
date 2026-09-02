@@ -19,6 +19,31 @@
   .pub-no { min-width: 32px; color: var(--muted); font-size: 12.5px; padding-top: 3px; }
   .pub-body .pub-title { font-size: 14.5px; color: var(--ink); line-height: 1.65; }
   .pub-body .pub-meta { font-size: 12.5px; color: var(--muted); margin-top: 5px; }
+
+  .fold-group + .fold-group { margin-top: 6px; }
+  .fold-head {
+    display: flex; align-items: center; gap: 10px; width: 100%;
+    background: none; border: 0; border-bottom: 1px solid var(--line);
+    padding: 12px 0; font: inherit; font-size: 13.5px; font-weight: 600;
+    color: var(--accent); letter-spacing: .06em; text-align: left; cursor: pointer;
+  }
+  .fold-mark {
+    width: 7px; height: 7px; border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor; transform: rotate(-45deg);
+    transition: transform .18s;
+  }
+  .fold-head[aria-expanded="true"] .fold-mark { transform: rotate(45deg); }
+  .fold-count { margin-left: auto; font-weight: 400; color: var(--muted); font-size: 12px; }
+  .fold-head .ko { font-weight: 400; color: var(--muted); }
+  .fold-body { padding-bottom: 10px; }
+  .fold-body .pub-item:first-of-type { border-top: 0; }
+
+  .tip { border-bottom: 1px dotted var(--line); cursor: help; }
+  .sep { color: var(--line); margin: 0 4px; }
+  .pub-grade {
+    display: inline-block; margin-left: 6px; padding: 0 6px;
+    border: 1px solid var(--line); font-size: 11.5px; color: var(--muted);
+  }
   @media (max-width: 900px) {
     .pub-item { gap: 12px; }
   }
@@ -63,95 +88,1613 @@
       <aside class="side-toc">
         <div class="toc-label">On this page</div>
         <a href="#journal">Journal Articles</a>
-        <a href="#others">Patents &amp; Software</a>
+        <a href="#others">Research Outputs</a>
       </aside>
       <div class="subpage-body">
         <section id="journal">
           <h2>Journal Articles</h2>
           <div class="h2-en ko">논문</div>
-          <div class="notice">
-            아래는 구성원 소개 자료에 기재된 <strong>대표논문</strong>만 옮겨 놓은 것입니다.
-            전체 논문 목록(저자, 학술지명, 권&middot;호, 연도 포함)을 받으면 최신순으로 정리하겠습니다.
-            번호는 가장 오래된 논문이 01번이 되도록 매기며, 새 논문이 나오면 가장 큰 번호를 받아 맨 위에 놓입니다.
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">10</div>
-            <div class="pub-body">
-              <div class="pub-title">Multi-Stage Data Processing for Enhancing Korean Cattle (Hanwoo) Weight Estimations by Automated Weighing Systems</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          <section class="fold-group" id="y2026">
+            <button class="fold-head" type="button" aria-expanded="true" aria-controls="y2026-body">
+              <span class="fold-mark" aria-hidden="true"></span>2026
+              <span class="fold-count">6</span>
+            </button>
+            <div class="fold-body" id="y2026-body">
+              <div class="pub-item">
+                <div class="pub-no">117</div>
+                <div class="pub-body">
+                  <div class="pub-title">Comparative species distribution modeling of Ricania speculum: Predicting global invasion risks and bioclimatic vulnerability</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dong-Hyeon Kim, Ga-Young Kim, Sunghoon Jung, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Zoological Systematics and Evolutionary Research
+                    <span class="sep">|</span> 2026
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">116</div>
+                <div class="pub-body">
+                  <div class="pub-title">Impact of an Updated Climate Database on Model Performance and Niche Variability in Species Distribution Modeling</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Woo Song, Sunhee Yoon, Sunghoon Jung, Wang-Hee Lee">Song et al.</span>
+                    <span class="sep">|</span> Ecology and Evolution
+                    <span class="sep">|</span> 2026
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">115</div>
+                <div class="pub-body">
+                  <div class="pub-title">Comprehensive spatial risk assessment using community-based species distribution models stratified by ant damage types</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Wang-Hee Lee">Yoon and Lee</span>
+                    <span class="sep">|</span> Ecological Informatics
+                    <span class="sep">|</span> 2026
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">114</div>
+                <div class="pub-body">
+                  <div class="pub-title">Global and regional evaluation of Corythucha marmorata distribution under different spatial modeling conditions</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Wang-Hee Lee">Byeon and Lee</span>
+                    <span class="sep">|</span> Scientific Reports
+                    <span class="sep">|</span> 2026
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">113</div>
+                <div class="pub-body">
+                  <div class="pub-title">A novel ensemble framework for background selection to improve species distribution models</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Wang-Hee Lee">Yoon and Lee</span>
+                    <span class="sep">|</span> Ecological Informatics
+                    <span class="sep">|</span> 2026
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">112</div>
+                <div class="pub-body">
+                  <div class="pub-title">Regional predictions of subterranean ant Pheidole megacephala distribution based on a global ensemble species distribution model incorporating climate and soil temperature</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Ga-Young Kim, Wang-Hee Lee">Kim and Lee</span>
+                    <span class="sep">|</span> Pest Management Science
+                    <span class="sep">|</span> 2026
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">09</div>
-            <div class="pub-body">
-              <div class="pub-title">Regional predictions of subterranean ant Pheidole megacephala distribution based on a global ensemble species distribution model incorporating climate and soil temperature</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          </section>
+          <section class="fold-group" id="y2025">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2025-body">
+              <span class="fold-mark" aria-hidden="true"></span>2025
+              <span class="fold-count">10</span>
+            </button>
+            <div class="fold-body" id="y2025-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">111</div>
+                <div class="pub-body">
+                  <div class="pub-title">Global multi-ensemble approach for assessing the invasion potential of tropical fire ant in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Wang-Hee Lee">Byeon and Lee</span>
+                    <span class="sep">|</span> Global Ecology and Conservation
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">110</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial prediction of Melanoplus differentialis using an ensemble of multiple species distribution models</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Se-Hyun Kim, Wang-Hee Lee">Yoon et al.</span>
+                    <span class="sep">|</span> Insect Conservation and Diversity
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">109</div>
+                <div class="pub-body">
+                  <div class="pub-title">Evaluation of Spatial Distribution of Pulse Blue Butterfly (Lampides boeticus), Pest of Legume Crops, in Response to Climate Change</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jeong Ho Hwang, Sunhee Yoon, Wang-Hee Lee">Hwang et al.</span>
+                    <span class="sep">|</span> Insects
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">108</div>
+                <div class="pub-body">
+                  <div class="pub-title">Multi-Stage Data Processing for Enhancing Korean Cattle (Hanwoo) Weight Estimations by Automated Weighing Systems</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dong-Hyeon Kim, Jae-Woo Song, Hyunjin Cho, Mingyung Lee, Dae-Hyun Lee, Seongwon Seo, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Animals
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">107</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial Evaluation of Chironomus plumosus Distribution Around Agricultural Processing Facilities in Response to Climate Change</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Tae-Hyeon Kim, Jae-Min Jung, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Entomological Research
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">106</div>
+                <div class="pub-body">
+                  <div class="pub-title">Risk monitoring of pine wilt disease based on semi-dynamic spatial prediction in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Jae-Min Jung, Donghyeon Kim, Jinhyeong Hwang, Yuri Park, Wang-Hee Lee">Yoon et al.</span>
+                    <span class="sep">|</span> Agricultural Systems
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">105</div>
+                <div class="pub-body">
+                  <div class="pub-title">Prediction of the spatial distribution of vine weevil under climate change using multiple variable selection methods</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Ga-Young Kim, Wang-Hee Lee">Kim and Lee</span>
+                    <span class="sep">|</span> Scientific Reports
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">104</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial Evaluation of Salurnis marginella Occurrence According to Climate Change Using Multiple Species Distribution Models</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Woo Song, Jaho Seo, Wang-Hee Lee">Song et al.</span>
+                    <span class="sep">|</span> Agriculture
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">103</div>
+                <div class="pub-body">
+                  <div class="pub-title">Development and Optimization of a Real-Time Monitoring System of Small-Scale Multi-Purpose Juice Extractor</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Tae-Hyeon Kim, Jae-Min Jung, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Foods
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">102</div>
+                <div class="pub-body">
+                  <div class="pub-title">Development of individual models for predicting cow milk production for real-time monitoring</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Woo Song, Mingyung Lee, Hyunjin Cho, Dae-Hyun Lee, Seongwon Seo, Wang-Hee Lee">Song et al.</span>
+                    <span class="sep">|</span> Computers and Electronics in Agriculture
+                    <span class="sep">|</span> 2025
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">08</div>
-            <div class="pub-body">
-              <div class="pub-title">Development of a predictive model for soil temperature and its application to species distribution modeling of ant species in South Korea</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          </section>
+          <section class="fold-group" id="y2024">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2024-body">
+              <span class="fold-mark" aria-hidden="true"></span>2024
+              <span class="fold-count">5</span>
+            </button>
+            <div class="fold-body" id="y2024-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">101</div>
+                <div class="pub-body">
+                  <div class="pub-title">Ensemble spatial modeling, considering habitat and biological traits, for predicting the potential distribution of Corythucha ciliata</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Tae-Hyeon Kim, Dae-hyeon Byeon, Jae-Woo Song, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Entomological Research
+                    <span class="sep">|</span> 2024
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">100</div>
+                <div class="pub-body">
+                  <div class="pub-title">Analysis of spatial and seasonal variations of Haemaphysalis longicornis population based on field survey collected under different habitats and years</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Jae-Min Jung, Sumin Oh, Jongmin Bae, Hye-Min Byun, Subin Choi, Geunho Jang, Minjoon Kang, Eunji Kim, Jaekook Park, Keon Mook Seong, Wang-Hee Lee, Sunghoon Jung">Yoon et al.</span>
+                    <span class="sep">|</span> Entomological Research
+                    <span class="sep">|</span> 2024
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">099</div>
+                <div class="pub-body">
+                  <div class="pub-title">Ensemble evaluation of potential distribution of Procambarus clarkii using multiple species distribution models</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Wang-Hee Lee">Byeon and Lee</span>
+                    <span class="sep">|</span> Oecologia
+                    <span class="sep">|</span> 2024
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">098</div>
+                <div class="pub-body">
+                  <div class="pub-title">Multi-algorithmic approach for detecting outliers in cattle intake data</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Dong-Hyeon Kim, Hyunjin Cho, Mingyung Lee, Jinhui Jeong, Dae-Hyun Lee, Seongwon Seo, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Journal of Agriculture and Food Research
+                    <span class="sep">|</span> 2024
+                    <span class="pub-grade">ESCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">097</div>
+                <div class="pub-body">
+                  <div class="pub-title">Analysis of the spread distance of pine wilt disease based on a high volume of spatiotemporal data recording of infected trees</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Sunhee Yoon, Jinhyeong Hwang, Yuri Park, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Forest Ecology and Management
+                    <span class="sep">|</span> 2024
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">07</div>
-            <div class="pub-body">
-              <div class="pub-title">Risk monitoring of pine wilt disease based on semi-dynamic spatial prediction in South Korea</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          </section>
+          <section class="fold-group" id="y2023">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2023-body">
+              <span class="fold-mark" aria-hidden="true"></span>2023
+              <span class="fold-count">6</span>
+            </button>
+            <div class="fold-body" id="y2023-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">096</div>
+                <div class="pub-body">
+                  <div class="pub-title">A statistical method to standardize and interpret the activity data generated by wireless biosensors in dairy cows</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Mingyung Lee, Dae-Hyun Lee, Jae-Min Jung, Hyunjin Cho, Seongwon Seo">Lee et al.</span>
+                    <span class="sep">|</span> Journal of Agricultural Science
+                    <span class="sep">|</span> 2023
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">095</div>
+                <div class="pub-body">
+                  <div class="pub-title">Assessing potential European areas of Pierce’s disease mediated by insect vectors by using spatial ensemble model</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Wang-Hee Lee">Yoon and Lee</span>
+                    <span class="sep">|</span> Frontiers in Plant Science
+                    <span class="sep">|</span> 2023
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">094</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial analysis of the occurrence of the western conifer seed bug Leptoglossus occidentalis (Heteroptera: Coreidae) in Europe based on multiple environmental variables</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Dae-Hyeon Byeon, Dong-Hyeon Lee, Youngwoo Nam, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Ecology and Evolution
+                    <span class="sep">|</span> 2023
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">093</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial analysis of climatic and dispersion characteristics of Xylella fastidiosa outbreak by insect vectors</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Wang-Hee Lee">Yoon and Lee</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Entomology
+                    <span class="sep">|</span> 2023
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">092</div>
+                <div class="pub-body">
+                  <div class="pub-title">Ensemble evaluation of the spatial distribution of pine wilt disease mediated by insect vectors in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Jae-Min Jung, Jinhyeong Hwang, Yuri Park, Wang-Hee Lee">Yoon et al.</span>
+                    <span class="sep">|</span> Forest Ecology and Management
+                    <span class="sep">|</span> 2023
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">091</div>
+                <div class="pub-body">
+                  <div class="pub-title">Application of true skill statistics as a practical method for quantitatively assessing CLIMEX performance</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Wang-Hee Lee">Yoon and Lee</span>
+                    <span class="sep">|</span> Ecological Indicators
+                    <span class="sep">|</span> 2023
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">06</div>
-            <div class="pub-body">
-              <div class="pub-title">Ensemble spatial modeling, considering habitat and biological traits, for predicting the potential distribution of Corythucha ciliata</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          </section>
+          <section class="fold-group" id="y2022">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2022-body">
+              <span class="fold-mark" aria-hidden="true"></span>2022
+              <span class="fold-count">8</span>
+            </button>
+            <div class="fold-body" id="y2022-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">090</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial and climatic analyses for predicting potential distribution of an invasive ant, Linepithema humile (Hymenoptera: Formicidae)</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Se-Hyun Kim, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Entomological Science
+                    <span class="sep">|</span> 2022
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">089</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial ensemble modeling for predicting the potential distribution of Lymantria dispar asiatica (Lepidoptera: Erebidae: Lymantriinae) in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Woo Song, Jae-Min Jung, Youngwoo Nam, Jong-Kook Jung, Sunghoon Jung, Wang-Hee Lee">Song et al.</span>
+                    <span class="sep">|</span> Environmental Monitoring and Assessment
+                    <span class="sep">|</span> 2022
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">088</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial Evaluation of Machine Learning-Based Species Distribution Models for Prediction of Invasive Ant Species Distribution</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Jae-Woo Song, Sun-Hee Yoon, Jae-Min Jung">Lee et al.</span>
+                    <span class="sep">|</span> Applied Sciences
+                    <span class="sep">|</span> 2022
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">087</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatiotemporal Statistics for Analyzing Climatic Conditions Influencing Lymantria dispar Outbreaks</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Woo Song, Jae-Min Jung, Young-Woo Nam, Hye-Min Byun, Sun-Hee Yoon, Sung-Hoon Jung, Wang-Hee Lee">Song et al.</span>
+                    <span class="sep">|</span> Forests
+                    <span class="sep">|</span> 2022
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">086</div>
+                <div class="pub-body">
+                  <div class="pub-title">Evaluation of Spatial Distribution of Three Major Leptocorisa (Hemiptera: Alydidae) Pests Using MaxEnt Model</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jeong Ho Hwang, Se-Hyun Kim, Sunhee Yoon, Sunghoon Jung, Dong Hee Kim, Wang-Hee Lee">Hwang et al.</span>
+                    <span class="sep">|</span> Insects
+                    <span class="sep">|</span> 2022
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">085</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial assessment of potential areas at risk from blueberry gall midge distribution in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Wang-Hee Lee">Byeon and Lee</span>
+                    <span class="sep">|</span> Journal of Applied Entomology
+                    <span class="sep">|</span> 2022
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">084</div>
+                <div class="pub-body">
+                  <div class="pub-title">Sweep Sampling Comparison of Terrestrial Insect Communities Associated with Herbaceous Stratum in the Riparian Zone of the Miho River, Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jeong Ho Hwang, Mean-Young Yim, Sung-Yeol Kim, Seong Jin Ji, Wang-Hee Lee">Hwang et al.</span>
+                    <span class="sep">|</span> Insects
+                    <span class="sep">|</span> 2022
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">083</div>
+                <div class="pub-body">
+                  <div class="pub-title">Evaluation of the suitability of potato cultivation areas in South Korea based on climate and soil conditions</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Joon-Yong Shim, Jae-Min Jung, Wang-Hee Lee">Shim et al.</span>
+                    <span class="sep">|</span> Frontiers in Bioscience Landmark
+                    <span class="sep">|</span> 2022
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">05</div>
-            <div class="pub-body">
-              <div class="pub-title">Development of individual models for predicting cow milk production for real-time monitoring</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          </section>
+          <section class="fold-group" id="y2021">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2021-body">
+              <span class="fold-mark" aria-hidden="true"></span>2021
+              <span class="fold-count">8</span>
+            </button>
+            <div class="fold-body" id="y2021-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">082</div>
+                <div class="pub-body">
+                  <div class="pub-title">Distribution analysis of Leptoglossus occidentalis Heidemann (Heteroptera: Coreidae) in South Korea using climate and host plant ensemble maps</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Jae-Min Jung, Sunghoon Jung, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Entomology
+                    <span class="sep">|</span> 2021
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">081</div>
+                <div class="pub-body">
+                  <div class="pub-title">Methodological analysis of bioclimatic variable selection in species distribution modeling with application to agricultural pests (Metcalfa pruinosa and Spodoptera litura)</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Sunhee Yoon, Wang-Hee Lee">Yoon and Lee</span>
+                    <span class="sep">|</span> Computers and Electronics in Agriculture
+                    <span class="sep">|</span> 2021
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">080</div>
+                <div class="pub-body">
+                  <div class="pub-title">Climate-based ensemble modeling to evaluate the global distribution of Anoplophora glabripennis (Motschulsky)</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Se-Hyun Kim, Jae-Min Jung, Sunghoon Jung, Kwang-Ho Kim, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Agricultural and Forest Entomology
+                    <span class="sep">|</span> 2021
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">079</div>
+                <div class="pub-body">
+                  <div class="pub-title">Ensemble evaluation of the potential risk areas of yellow-legged hornet distribution</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Se-Hyun Kim, Dong Eon Kim, Heejo Lee, Sunghoon Jung, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Environmental Monitoring and Assessment
+                    <span class="sep">|</span> 2021
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">078</div>
+                <div class="pub-body">
+                  <div class="pub-title">Classification of geographical origin of kimchi by volatile compounds analysis using an electronic nose</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Il-Nam Ho, Seunghyun Choi, Jong-Tae Park">Lee et al.</span>
+                    <span class="sep">|</span> Food Science and Biotechnology
+                    <span class="sep">|</span> 2021
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">077</div>
+                <div class="pub-body">
+                  <div class="pub-title">Evaluating the invasion risk of longhorn crazy ants (Paratrechina longicornis) in South Korea using spatial distribution model</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Jae-Min Jung, Heung-Sik Lee, Jong-Ho Lee, Sunghoon Jung">Lee et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Entomology
+                    <span class="sep">|</span> 2021
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">076</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatial analysis of changes in Plodia interpunctella (Lepidoptera: Pyralidae) distribution depending on diets</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Youngwoo Nam, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Journal of Stored Products Research
+                    <span class="sep">|</span> 2021
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">075</div>
+                <div class="pub-body">
+                  <div class="pub-title">Development of a predictive model for soil temperature and its application to species distribution modeling of ant species in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Heung-Sik Lee, Jong-Ho Lee, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Ecological Informatics
+                    <span class="sep">|</span> 2021
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">04</div>
-            <div class="pub-body">
-              <div class="pub-title">Analysis of the spread distance of pine wilt disease based on a high volume of spatiotemporal data recording of infected trees</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          </section>
+          <section class="fold-group" id="y2020">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2020-body">
+              <span class="fold-mark" aria-hidden="true"></span>2020
+              <span class="fold-count">13</span>
+            </button>
+            <div class="fold-body" id="y2020-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">074</div>
+                <div class="pub-body">
+                  <div class="pub-title">Spatiotemporal evaluation of red flour beetle (Tribolium castaneum) dispersion under the effect of climate and topography in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Se-Hyun Kim, Dae-hyeon Byeon, Jae-Min Jung, Sunghoon Jung, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Stored Products Research
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">073</div>
+                <div class="pub-body">
+                  <div class="pub-title">Estimating economic damage to cocoa bean production with changes in the spatial distribution of red flour beetle (Tribolium castaneum (Coleoptera: Tenebrionidae)) in response to climate change</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Dae-hyeon Byeon, Se-Hyun Kim, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Journal of Stored Products Research
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">072</div>
+                <div class="pub-body">
+                  <div class="pub-title">Changes in Spatiotemporal Distribution of the Potato Tuber Moth (Phthorimaea operculella) in South Korea in Response to Climate Change Determined Using a Field Survey</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Sunghoon Jung, Sang-Guei Lee, Sung-Wook Jeon, Min Kwon, Juil Kim, Kwang-Ho Kim, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Agronomy
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">071</div>
+                <div class="pub-body">
+                  <div class="pub-title">Model-based assessment of changes in the potential distribution of Solenopsis geminata (Hymenoptera: Formicidae) according to climate change scenarios</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Jae-Min Jung, Youngjin Park, Heung-Sik Lee, Jong-Ho Lee, Sunghoon Jung, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Biodiversity
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">070</div>
+                <div class="pub-body">
+                  <div class="pub-title">Estimation of carcass weight of Hanwoo (Korean native cattle) as a function of body measurements using statistical models and a neural network</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-Hyun Lee, Seung-Hyun Lee, Byoung-Kwan Cho, Collins Wakholi, Young-Wook Seo, Soo-Hyun Cho, Tae-Hwan Kang, Wang-Hee Lee">Lee et al.</span>
+                    <span class="sep">|</span> Asian-Australasian Journal of Animal Sciences
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">069</div>
+                <div class="pub-body">
+                  <div class="pub-title">Quantitative Analysis of Glucosinolate Content in Chinese cabbages under Different Storage Conditions</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Do-Gyun Kim, Kyubeen Park, Jong-Tae Park, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">068</div>
+                <div class="pub-body">
+                  <div class="pub-title">Discrimination study between carcass yield and meat quality by gender in Korean native cattle (Hanwoo)</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Do-Gyun Kim, Joon-Yong Shim, Byoung-Kwan Cho, Collins Wakholi, Youngwook Seo, Soohyun Cho, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Asian-Australasian Journal of Animal Sciences
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">067</div>
+                <div class="pub-body">
+                  <div class="pub-title">Evaluation of the spatial distribution of Anoplophora glabripennis (Motschulsky) (Coleoptera: Cerambycidae) in South Korea combining climate and host plant distribution</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Joon-Yong Shim, Jae-Min Jung, Dae-hyeon Byeon, Sunghoon Jung, Wang-Hee Lee">Shim et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Entomology
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">066</div>
+                <div class="pub-body">
+                  <div class="pub-title">Prediction of Spatiotemporal Invasive Risk by the Red Imported Fire Ant (Hymenoptera: Formicidae) in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Jong-Ho Lee, Heung-Sik Lee, Youngjin Park, Sunghoon Jung, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Agronomy
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">065</div>
+                <div class="pub-body">
+                  <div class="pub-title">Sequential sampling method for monitoring potato tuber moths (Phthorimaea operculella) in potato fields</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Dae-hyeon Byeon, Eunji Kim, Hye-Min Byun, Jaekook Park, Jihoon Kim, Jongmin Bae, Kyutae Kim, Marcos Roca-Cusachs, Minjoon Kang, Subin Choi, Sumin Oh, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Korean Journal of Agricultural Science
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">064</div>
+                <div class="pub-body">
+                  <div class="pub-title">Effect of types of meteorological data on species distribution predicted by the CLIMEX model using an example of Lycorma delicatula (Hemiptera: Fulgoridae)</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Jae-Min Jung, Sunghoon Jung, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Biodiversity
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">063</div>
+                <div class="pub-body">
+                  <div class="pub-title">Analysis of the spatial distribution and dispersion of Plodia interpunctella (Lepidoptera: Pyralidae) in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Jae-Min Jung, Junggon Kim, Hodan Lee, Sunghoon Jung">Lee et al.</span>
+                    <span class="sep">|</span> Journal of Stored Products Research
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">062</div>
+                <div class="pub-body">
+                  <div class="pub-title">Statistical analysis for determining optimal sample size for living modified organism (LMO) seed detection</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Do-Gyun Kim, Seung-Hyun Lee, Byoung-Kwan Cho, Dae-hyeon Byeon, Jayoung Lee, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Crop Science and Biotechnology
+                    <span class="sep">|</span> 2020
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">03</div>
-            <div class="pub-body">
-              <div class="pub-title">Development and Optimization of a Real-Time Monitoring System of Small-Scale Multi-Purpose Juice Extractor</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          </section>
+          <section class="fold-group" id="y2019">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2019-body">
+              <span class="fold-mark" aria-hidden="true"></span>2019
+              <span class="fold-count">6</span>
+            </button>
+            <div class="fold-body" id="y2019-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">061</div>
+                <div class="pub-body">
+                  <div class="pub-title">The potential distribution of the potato tuber moth (Phthorimaea operculella) based on climate and host availability of potato</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Sang-Geui Lee, Kwang-Ho Kim, Sung-Wook Jeon, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Agronomy
+                    <span class="sep">|</span> 2019
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">060</div>
+                <div class="pub-body">
+                  <div class="pub-title">Optimization of growth conditions for forage production in a fresh forage growing system</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Do-Gyun Kim, Gyu-Wan Kim, Seung-Hyun Lee, Jong-Tae Park, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Emirates Journal of Food and Agriculture
+                    <span class="sep">|</span> 2019
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">059</div>
+                <div class="pub-body">
+                  <div class="pub-title">Effect of climate change on the potential distribution of the common cutworm (Spodoptera litura) in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Dae-hyeon Byeon, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Entomological Research
+                    <span class="sep">|</span> 2019
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">058</div>
+                <div class="pub-body">
+                  <div class="pub-title">Mathematical Modeling and Optimization of Active Calcium Absorption in Human Body</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Do-Gyun Kim">Lee and Kim</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2019
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">057</div>
+                <div class="pub-body">
+                  <div class="pub-title">Statistical and empirical determination of the optimal sampling method for detecting non-homogeneously mixed living modified organisms (LMO) seeds</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Do-Gyun Kim, Seung-Hyun Lee, Byoung-Kwan Cho, Dae-hyeon Byeon, Jayoung Lee, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Crop Science and Biotechnology
+                    <span class="sep">|</span> 2019
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">056</div>
+                <div class="pub-body">
+                  <div class="pub-title">Changes in quality parameters of tomatoes during storage: a review</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Joon-Yong Shim, Sun-Ok Chung, Yong-Soo Hwang, Wang-Hee Lee, Hoonsoo Lee">Jung et al.</span>
+                    <span class="sep">|</span> Korean Journal of Agricultural Science
+                    <span class="sep">|</span> 2019
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">02</div>
-            <div class="pub-body">
-              <div class="pub-title">Review of CLIMEX and MaxEnt for studying species distribution in South Korea</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          </section>
+          <section class="fold-group" id="y2018">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2018-body">
+              <span class="fold-mark" aria-hidden="true"></span>2018
+              <span class="fold-count">10</span>
+            </button>
+            <div class="fold-body" id="y2018-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">055</div>
+                <div class="pub-body">
+                  <div class="pub-title">Effectiveness of Sensitivity Analysis for Parameter Selection in CLIMEX Modeling of Metcalfa pruinosa Distribution</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Sunghoon Jung, Changyeun Mo, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">054</div>
+                <div class="pub-body">
+                  <div class="pub-title">Review of CLIMEX and MaxEnt for studying species distribution in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Sunghoon Jung, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Biodiversity
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">053</div>
+                <div class="pub-body">
+                  <div class="pub-title">Optimizing growth conditions for glucosinolate production in Chinese cabbage</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Joon-Yong Shim, Ha-Yeong Kim, Do-Gyun Kim, Ye-Seul Lee, Sun-Ok Chung, Wang-Hee Lee">Shim et al.</span>
+                    <span class="sep">|</span> Horticulture, Environment, and Biotechnology
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">052</div>
+                <div class="pub-body">
+                  <div class="pub-title">Statistical modeling for estimating glucosinolate content in Chinese cabbage by growth conditions</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Do-Gyun Kim, Joon-Yong Shim, Myung-Jun Ko, Sun-Ok Chung, Milon Chowdhury, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Journal of the Science of Food and Agriculture
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">051</div>
+                <div class="pub-body">
+                  <div class="pub-title">Multivariate analysis of deboning data for classifying Hanwoo (Korean native cattle) by gender</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Joon-Yong Shim, Ha-Yeong Kim, Byoung-Kwan Cho, Seung Hwan Yang, Changyeun Mo, Kyung Do Kwon, Jin-Hyoung Kim, Wang-Hee Lee">Shim et al.</span>
+                    <span class="sep">|</span> Current Science
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">050</div>
+                <div class="pub-body">
+                  <div class="pub-title">Effect of vibration stress on quality of packaged grapes during transportation</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Hyun Mo Jung, Sangdae Lee, Wang-Hee Lee, Byoung-Kwan Cho, Seung Hyun Lee">Jung et al.</span>
+                    <span class="sep">|</span> Engineering in Agriculture, Environment and Food
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">049</div>
+                <div class="pub-body">
+                  <div class="pub-title">Review of Current Approaches for Implementing Metabolic Reconstruction</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Do-Gyun Kim, Sung-Won Seo, Byoung-Kwan Cho, Santosh Lohumi, Soon-jung Hong, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">048</div>
+                <div class="pub-body">
+                  <div class="pub-title">Prediction of global geographic distribution of Metcalfa pruinosa using CLIMEX</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Jae-Min Jung, Sunghoon Jung, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Entomological Research
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">047</div>
+                <div class="pub-body">
+                  <div class="pub-title">Determination of the total volatile basic nitrogen (TVB-N) content in pork meat using hyperspectral fluorescence imaging</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Hoonsoo Lee, Moon S. Kim, Wang-Hee Lee, Byoung-Kwan Cho">Lee et al.</span>
+                    <span class="sep">|</span> Sensors and Actuators B: Chemical
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">046</div>
+                <div class="pub-body">
+                  <div class="pub-title">Rapid assessment of corn seed viability using short wave infrared line-scan hyperspectral imaging and chemometrics</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Collins Wakholi, Lalit Mohan Kandpal, Hoonsoo Lee, Hyungjin Bae, Eunsoo Park, Moon S. Kim, Changyeun Mo, Wang-Hee Lee, Byoung-Kwan Cho">Wakholi et al.</span>
+                    <span class="sep">|</span> Sensors and Actuators B: Chemical
+                    <span class="sep">|</span> 2018
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="pub-item">
-            <div class="pub-no">01</div>
-            <div class="pub-body">
-              <div class="pub-title">Insect distribution in response to climate change based on a model: Review of function and use of CLIMEX</div>
-              <div class="pub-meta">저자 &middot; 학술지 &middot; 연도 정보 필요</div>
+          </section>
+          <section class="fold-group" id="y2017">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2017-body">
+              <span class="fold-mark" aria-hidden="true"></span>2017
+              <span class="fold-count">10</span>
+            </button>
+            <div class="fold-body" id="y2017-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">045</div>
+                <div class="pub-body">
+                  <div class="pub-title">Invasion risk of the yellow crazy ant (Anoplolepis gracilipes) under the Representative Concentration Pathways 8.5 climate change scenario in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Sunghoon Jung, Mohammed Raju Ahmed, Byoung-Kwan Cho, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Biodiversity
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">044</div>
+                <div class="pub-body">
+                  <div class="pub-title">Model-based prediction of potential distribution of the invasive insect pest, spotted lanternfly Lycorma delicatula (Hemiptera: Fulgoridae), by using CLIMEX</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Dae-hyeon Byeon, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Biodiversity
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">043</div>
+                <div class="pub-body">
+                  <div class="pub-title">Global prediction of geographical change of yellow crazy ant (Anoplolepis gracilipes) distribution in response to climate change scenario</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Dae-hyeon Byeon, Sunghoon Jung, Yong Man Yu, Chisa Yasunaga-Aoki, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Journal of the Faculty of Agriculture, Kyushu University
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">042</div>
+                <div class="pub-body">
+                  <div class="pub-title">Imaging Technologies for Nondestructive Measurement of Internal Properties of Agricultural Products: A Review</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Mohammed Raju Ahmed, Jannat Yasmin, Wang-Hee Lee, Changyeun Mo, Byoung-Kwan Cho">Ahmed et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">041</div>
+                <div class="pub-body">
+                  <div class="pub-title">CLIMEX-based Analysis of Potential Geographical Distribution of Aedes albopictus and Aedes aegypti in South Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Ji-Won Lee, Chang-ju Kim, Sunghoon Jung, Wang-Hee Lee">Jung et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">040</div>
+                <div class="pub-body">
+                  <div class="pub-title">Predictive analysis of Metcalfa pruinosa (Hemiptera: Flatidae) distribution in South Korea using CLIMEX software</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-hyeon Byeon, Jae-Min Jung, Santosh Lohumi, Byoung-Kwan Cho, Sunghoon Jung, Wang-Hee Lee">Byeon et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Biodiversity
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">039</div>
+                <div class="pub-body">
+                  <div class="pub-title">Multivariate classification of the geographic origin of Chinese cabbage using an electronic nose-mass spectrometry</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Seunghyun Choi, Il-Nam Oh, Joon-Yong Shim, Kwang-Sik Lee, Gilhwan An, Jong-Tae Park">Lee et al.</span>
+                    <span class="sep">|</span> Food Science and Biotechnology
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">038</div>
+                <div class="pub-body">
+                  <div class="pub-title">Metabolic reconstruction for developing a tissue-specific model for cattle glycolysis using COBRA</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Do Gyun Kim, Sung-Won Seo, Hye-Sun Park, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Biological Systems
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">037</div>
+                <div class="pub-body">
+                  <div class="pub-title">On-line fresh-cut lettuce quality measurement system using hyperspectral imaging</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Changyeun Mo, Giyoung Kim, Moon S. Kim, Jongguk Lim, Kangjin Lee, Wang-Hee Lee, Byoung-Kwan Cho">Mo et al.</span>
+                    <span class="sep">|</span> Biosystems Engineering
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">036</div>
+                <div class="pub-body">
+                  <div class="pub-title">Non-destructive evaluation of bacteria-infected watermelon seeds using visible/near-infrared hyperspectral imaging</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Hoonsoo Lee, Moon S. Kim, Yu-Rim Song, Chang-Sik Oh, Hyoun-Sub Lim, Wang-Hee Lee, Jum-Soon Kang, Byoung-Kwan Cho">Lee et al.</span>
+                    <span class="sep">|</span> Journal of the Science of Food and Agriculture
+                    <span class="sep">|</span> 2017
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </section>
+          <section class="fold-group" id="y2016">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2016-body">
+              <span class="fold-mark" aria-hidden="true"></span>2016
+              <span class="fold-count">13</span>
+            </button>
+            <div class="fold-body" id="y2016-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">035</div>
+                <div class="pub-body">
+                  <div class="pub-title">Detection of cucumber green mottle mosaic virus-infected watermelon seeds using a near-infrared (NIR) hyperspectral imaging system: Application to seeds of the “Sambok Honey” cultivar</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Hoonsoo Lee, Moon S. Kim, Hyoun-Sub Lim, Eunsoo Park, Wang-Hee Lee, Byoung-Kwan Cho">Lee et al.</span>
+                    <span class="sep">|</span> Biosystems Engineering
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">034</div>
+                <div class="pub-body">
+                  <div class="pub-title">Physicochemical Quality Changes in Chinese Cabbage with Storage Period and Temperature: a Review</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Joon-Yong Shim, Do-Gyun Kim, Jong-Tae Park, Lalit Mohan Kandpal, Soon-jung Hong, Byoung-Kwan Cho, Wang-Hee Lee">Shim et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">033</div>
+                <div class="pub-body">
+                  <div class="pub-title">Molecular Diagnosis of the Biological Control Agent Nesidiocoris tenuis (Tobacco Plant Bug) and Its Allied Species (Insecta: Hemiptera) Using COI Barcoding</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jung Gon Kim, Hodan Lee, Wang-Hee Lee, Yong Man Yu, Chisa Yasunaga-Aoki, Sung Hoon Jung">Kim et al.</span>
+                    <span class="sep">|</span> Journal of the Faculty of Agriculture, Kyushu University
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">032</div>
+                <div class="pub-body">
+                  <div class="pub-title">Lifecycle, Biology, and Descriptions of Greenhouse Biological Control Agent, Nesidiocoris tenuis (Reuter, 1895) (Hemiptera: Miridae)</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jung Gon Kim, Wang-Hee Lee, Yong Man Yu, Chisa Yasunaga-Aoki, Sung Hoon Jung">Kim et al.</span>
+                    <span class="sep">|</span> Journal of the Faculty of Agriculture, Kyushu University
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">031</div>
+                <div class="pub-body">
+                  <div class="pub-title">High Speed Measurement of Corn Seed Viability Using Hyperspectral Imaging</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Ashabahebwa Ambrose, Lalit Mohan Kandpal, Moon S. Kim, Wang-Hee Lee, Byoung-Kwan Cho">Ambrose et al.</span>
+                    <span class="sep">|</span> Infrared Physics and Technology
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">030</div>
+                <div class="pub-body">
+                  <div class="pub-title">A novel approach in analyzing agriculture and food systems: Review of modeling and its applications</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Do-Gyun Kim, Byoung-Kwan Cho, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Korean Journal of Agricultural Science
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">029</div>
+                <div class="pub-body">
+                  <div class="pub-title">Application of Fourier transform-mid infrared reflectance spectroscopy for monitoring Korean traditional rice wine ‘Makgeolli’ fermentation</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dae-Yong Kim, Byoung-Kwan Cho, Seung Hyun Lee, Kyungdo Kwon, Eun Soo Park, Wang-Hee Lee">Kim et al.</span>
+                    <span class="sep">|</span> Sensors and Actuators B: Chemical
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">028</div>
+                <div class="pub-body">
+                  <div class="pub-title">Insect distribution in response to climate change based on a model: Review of function and use of CLIMEX</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jae-Min Jung, Wang-Hee Lee, Sunghoon Jung">Jung et al.</span>
+                    <span class="sep">|</span> Entomological Research
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">027</div>
+                <div class="pub-body">
+                  <div class="pub-title">Newly recorded genus Pantilius Curtis (Hemiptera: Heteroptera: Miridae) from the Korean Peninsula, with a key to the world Pantilius species</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Junggon Kim, WonGun Kim, Wang-Hee Lee, Sunghoon Jung">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Asia-Pacific Biodiversity
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">026</div>
+                <div class="pub-body">
+                  <div class="pub-title">Model-based analysis of IGF-1 effect on osteoblast and osteoclast regulation in bone turnover</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Martine R. Okos">Lee and Okos</span>
+                    <span class="sep">|</span> Journal of Biological Systems
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">025</div>
+                <div class="pub-body">
+                  <div class="pub-title">Comparative nondestructive measurement of corn seed viability using Fourier transform near-infrared (FT-NIR) and Raman spectroscopy</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Ashabahebwa Ambrose, Santosh Lohumi, Wang-Hee Lee, Byoung Kwan Cho">Ambrose et al.</span>
+                    <span class="sep">|</span> Sensors and Actuators B: Chemical
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">024</div>
+                <div class="pub-body">
+                  <div class="pub-title">Continuous production of pure maltodextrin from cyclodextrin using immobilized Pyrococcus furiosus thermostable amylase</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Nguyen Phu Cuong, Wang-Hee Lee, Il-Nam Oh, Nguyen Minh Thuy, Do-Gyun Kim, Jong-Tae Park, Kwan-Hwa Park">Cuong et al.</span>
+                    <span class="sep">|</span> Process Biochemistry
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">023</div>
+                <div class="pub-body">
+                  <div class="pub-title">Application of hyperspectral imaging for characterization of intramuscular fat distribution in beef</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Santosh Lohumi, Sangdae Lee, Hoonsoo Lee, Moon S. Kim, Wang-Hee Lee, Byoung-Kwan Cho">Lohumi et al.</span>
+                    <span class="sep">|</span> Infrared Physics and Technology
+                    <span class="sep">|</span> 2016
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="fold-group" id="y2015">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2015-body">
+              <span class="fold-mark" aria-hidden="true"></span>2015
+              <span class="fold-count">4</span>
+            </button>
+            <div class="fold-body" id="y2015-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">022</div>
+                <div class="pub-body">
+                  <div class="pub-title">A Review of Technologies to Prolong the Shelf Life of Fresh Tropical Fruits in Southeast Asia</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Dewi Kusumaningrum, Seung-Hyun Lee, Wang-Hee Lee, Changyeun Mo, Byoung-Kwan Cho">Kusumaningrum et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2015
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">021</div>
+                <div class="pub-body">
+                  <div class="pub-title">Effect of Microwave Heat Treatment on Inhibition of Corn Seed Germination</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Ashabahebwa Ambrose, Wang-Hee Lee, Byoung-Kwan Cho">Ambrose et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2015
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">020</div>
+                <div class="pub-body">
+                  <div class="pub-title">Review of rice quality under various growth and storage conditions and its evaluation using spectroscopic technology</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Ritu Joshi, Changyeun Mo, Wang-Hee Lee, Seung Hyun Lee, Byoung-Kwan Cho">Joshi et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2015
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">019</div>
+                <div class="pub-body">
+                  <div class="pub-title">Review of Ca Metabolic Studies and a Model for Optimizing Gastrointestinal Ca Absorption and Peak Bone Mass in Adolescents</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jong-Tae Park, Byoung-Kwan Cho, Wang-Hee Lee">Park et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2015
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="fold-group" id="y2014">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2014-body">
+              <span class="fold-mark" aria-hidden="true"></span>2014
+              <span class="fold-count">5</span>
+            </button>
+            <div class="fold-body" id="y2014-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">018</div>
+                <div class="pub-body">
+                  <div class="pub-title">냉동 온도에 따른 블루베리의 품질 특성 비교</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Hye-Jin Jo, Jung-Eun Kim, Min-Ji Yu, Wang-Hee Lee, Kyung Bin Song, Ha-Yun Kim, In Guk Hwang, Seon Mi Yoo, Gwi Jung Han, Jong-Tae Park">Jo et al.</span>
+                    <span class="sep">|</span> Journal of the Korean Society of Food Science and Nutrition
+                    <span class="sep">|</span> 2014
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">017</div>
+                <div class="pub-body">
+                  <div class="pub-title">Detection of starch adulteration in onion powder by FT-NIR and FT-IR spectroscopy</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Santosh Lohumi, Sangdae Lee, Wang-Hee Lee, Moon S. Kim, Changyeun Mo, Hanhong Bae, Byoung-Kwan Cho">Lohumi et al.</span>
+                    <span class="sep">|</span> Journal of Agricultural and Food Chemistry
+                    <span class="sep">|</span> 2014
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">016</div>
+                <div class="pub-body">
+                  <div class="pub-title">Optimal Fluorescence Waveband Determination for Detecting Defective Cherry Tomatoes Using Fluorescence Excitation-Emission Matrix</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="In-Suck Baek, Moon S. Kim, Hoosoo Lee, Wang-Hee Lee, Byoung-Kwan Cho">Baek et al.</span>
+                    <span class="sep">|</span> Sensors
+                    <span class="sep">|</span> 2014
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">015</div>
+                <div class="pub-body">
+                  <div class="pub-title">Calcium and vitamin D intake maintained from preovariectomy independently affect calcium metabolism and bone properties in Sprague Dawley rats</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Clara Park, Wang-Hee Lee, James C. Fleet, Matthew R. Allen, George P. McCabe, Deirdre M. Walsh, Connie M. Weaver">Park et al.</span>
+                    <span class="sep">|</span> Osteoporosis International
+                    <span class="sep">|</span> 2014
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">014</div>
+                <div class="pub-body">
+                  <div class="pub-title">Hyperspectral near-infrared imaging for the detection of physical damages of pear</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Moon S. Kim, Hoonsoo Lee, Stephen R. Delwiche, Hanhong Bae, Dae-Yong Kim, Byoung-Kwan Cho">Lee et al.</span>
+                    <span class="sep">|</span> Journal of Food Engineering
+                    <span class="sep">|</span> 2014
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="fold-group" id="y2013">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2013-body">
+              <span class="fold-mark" aria-hidden="true"></span>2013
+              <span class="fold-count">6</span>
+            </button>
+            <div class="fold-body" id="y2013-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">013</div>
+                <div class="pub-body">
+                  <div class="pub-title">Nutritional evaluation and comparison of new pak choi cultivars from China with Chinese cabbage cultivars popular in Korea</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Ganchimeg Gantumar, M.H. Jo, Davaajargal Igori, In Ki Ham, Eun Mo Lee, Wang-Hee Lee, Yong Pyo Lim, Gilhwan An, Jong-Tae Park">Gantumar et al.</span>
+                    <span class="sep">|</span> Journal of the Korean Society of Food Science and Nutrition
+                    <span class="sep">|</span> 2013
+                    <span class="pub-grade">SCOPUS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">012</div>
+                <div class="pub-body">
+                  <div class="pub-title">A Theoretical Modeling for Suggesting Unique Mechanism of Adolescent Calcium Metabolism</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Byoung-Kwan Cho, Martin R. Okos">Lee et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2013
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">011</div>
+                <div class="pub-body">
+                  <div class="pub-title">Prediction of Crude Protein and Oil Content of Soybeans Using Raman Spectroscopy</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Hoonsoo Lee, Byoung-Kwan Cho, Moon S. Kim, Wang-Hee Lee, Jagdish Tewari, Hanhong Bae, Soo-In Sohn, Hee-Youn Chi">Lee et al.</span>
+                    <span class="sep">|</span> Sensors and Actuators B: Chemical
+                    <span class="sep">|</span> 2013
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">010</div>
+                <div class="pub-body">
+                  <div class="pub-title">Mechanistic modeling in biosystem engineering: A review on mechanistic models of calcium metabolism</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Byoung-Kwan Cho">Lee and Cho</span>
+                    <span class="sep">|</span> Food Engineering Progress
+                    <span class="sep">|</span> 2013
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">009</div>
+                <div class="pub-body">
+                  <div class="pub-title">Detection of cuticle defects on cherry tomatoes using hyperspectral fluorescence imagery</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Byoung-Kwan Cho, Moon S. Kim, In-Suck Baek, Dae-Yong Kim, Wang-Hee Lee, Jongkee Kim, Hanhong Bae, Young-Sik Kim">Cho et al.</span>
+                    <span class="sep">|</span> Postharvest Biology and Technology
+                    <span class="sep">|</span> 2013
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">008</div>
+                <div class="pub-body">
+                  <div class="pub-title">Soft tissue calcification in the Ossabaw miniature pig: experimental and kinetic modeling studies</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Meryl Wastney, Wang-Hee Lee, George Jackson, Mouhamad Alloosh, Michael Sturek, Pamela Lachcik, Munro Peacock, Berdine Martin, Connie Weaver">Wastney et al.</span>
+                    <span class="sep">|</span> Osteoporosis International
+                    <span class="sep">|</span> 2013
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="fold-group" id="y2012">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2012-body">
+              <span class="fold-mark" aria-hidden="true"></span>2012
+              <span class="fold-count">4</span>
+            </button>
+            <div class="fold-body" id="y2012-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">007</div>
+                <div class="pub-body">
+                  <div class="pub-title">Optimal Optical Filters of Fluorescence Excitation and Emission for Poultry Fecal Detection</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Tae-Min Kim, Hoon-Soo Lee, Moon-S Kim, Wang-Hee Lee, Byoung-Kwan Cho">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2012
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">006</div>
+                <div class="pub-body">
+                  <div class="pub-title">Nondestructive Measurement of Cheese Texture using Noncontact Air-instability Compensation Ultrasonic Sensors</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="In Suck Baek, Hoonsoo Lee, Dae-Yong Kim, Wang-Hee Lee, Byoung-Kwan Cho">Baek et al.</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2012
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">005</div>
+                <div class="pub-body">
+                  <div class="pub-title">Prebiotics Enhance Magnesium Absorption and Inulin-based Fibers Exert Chronic Effects on Calcium Utilization in a Postmenopausal Rodent Model</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="LeeCole L. Legette, Wang-Hee Lee, Berdine R. Martin, Jon A. Story, Jessica K. Campbell, Connie M. Weaver">Legette et al.</span>
+                    <span class="sep">|</span> Journal of Food Science
+                    <span class="sep">|</span> 2012
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">004</div>
+                <div class="pub-body">
+                  <div class="pub-title">Review on application of biosystem modeling: Introducing 3 model-based approaches in studying Ca metabolism</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, Byoung-Kwan Cho">Lee and Cho</span>
+                    <span class="sep">|</span> Journal of Biosystems Engineering
+                    <span class="sep">|</span> 2012
+                    <span class="pub-grade">KCI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="fold-group" id="y2011">
+            <button class="fold-head" type="button" aria-expanded="false" aria-controls="y2011-body">
+              <span class="fold-mark" aria-hidden="true"></span>2011
+              <span class="fold-count">3</span>
+            </button>
+            <div class="fold-body" id="y2011-body" hidden>
+              <div class="pub-item">
+                <div class="pub-no">003</div>
+                <div class="pub-body">
+                  <div class="pub-title">Simple Isotopic Method using Oral Stable or Radioactive Tracers for Estimating Fractional Calcium Absorption in Adult Women</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Wang-Hee Lee, George P. McCabe, Berdine R. Martin, Connie M. Weaver">Lee et al.</span>
+                    <span class="sep">|</span> Osteoporosis International
+                    <span class="sep">|</span> 2011
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">002</div>
+                <div class="pub-body">
+                  <div class="pub-title">One-Pot Synthesis of Cycloamyloses from Sucrose by Dual Enzyme Treatment: Combined Reaction of Amylosucrase and 4-α-Glucanotransferase</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="Jung-Hwan Kim, Ren Wang, Wang-Hee Lee, Cheon-Seok Park, Suyong Lee, Sang-Ho Yoo">Kim et al.</span>
+                    <span class="sep">|</span> Journal of Agricultural and Food Chemistry
+                    <span class="sep">|</span> 2011
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">001</div>
+                <div class="pub-body">
+                  <div class="pub-title">Genistein, a phytoestrogen, improves total cholesterol, and Synergy, a prebiotic, improves calcium utilization, but there were no synergistic effects</div>
+                  <div class="pub-meta">
+                    <span class="tip" title="LeeCole L. Legette, Wang-Hee Lee, Berdine R. Martin, Jon A. Story, Ali Arabshahi, Stephen Barnes, Connie M. Weaver">Legette et al.</span>
+                    <span class="sep">|</span> Menopause
+                    <span class="sep">|</span> 2011
+                    <span class="pub-grade">SCI(E)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
         <section id="others">
-          <h2>Patents &amp; Software</h2>
-          <div class="h2-en ko">특허 &middot; 소프트웨어 저작권</div>
-          <div class="notice" style="margin-bottom:0;">
-            특허 및 소프트웨어 저작권 목록을 받으면 이 자리에 정리하겠습니다.
-            항목별로 <strong>명칭 &middot; 등록번호 &middot; 등록일</strong>이 있으면 그대로 반영할 수 있습니다.
-          </div>
+          <h2>Research Outputs</h2>
+          <div class="h2-en ko">연구 실적</div>
+          <section class="fold-group" id="out-patent">
+            <button class="fold-head" type="button" aria-expanded="true" aria-controls="out-patent-body">
+              <span class="fold-mark" aria-hidden="true"></span>Patents<span class="ko"> &middot; 특허</span>
+              <span class="fold-count">2</span>
+            </button>
+            <div class="fold-body" id="out-patent-body">
+              <div class="pub-item">
+                <div class="pub-no">02</div>
+                <div class="pub-body">
+                  <div class="pub-title">IoT 센서를 활용한 농축 모니터링 제어 시스템 및 그 방법</div>
+                  <div class="pub-meta">10-2025-0185959</div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">01</div>
+                <div class="pub-body">
+                  <div class="pub-title">IoT 센서를 활용한 착즙기의 모니터링 시스템 및 그 방법</div>
+                  <div class="pub-meta">10-2025-0064716</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="fold-group" id="out-software">
+            <button class="fold-head" type="button" aria-expanded="true" aria-controls="out-software-body">
+              <span class="fold-mark" aria-hidden="true"></span>Software<span class="ko"> &middot; 소프트웨어 저작권</span>
+              <span class="fold-count">5</span>
+            </button>
+            <div class="fold-body" id="out-software-body">
+              <div class="pub-item">
+                <div class="pub-no">05</div>
+                <div class="pub-body">
+                  <div class="pub-title">한우 육량, 육질등급 분류 알고리즘</div>
+                  <div class="pub-meta">C-2026-032396</div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">04</div>
+                <div class="pub-body">
+                  <div class="pub-title">착유량 모니터링 인덱스 알고리즘</div>
+                  <div class="pub-meta">C-2026-030517</div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">03</div>
+                <div class="pub-body">
+                  <div class="pub-title">기계학습 기반 총 유량 예측 알고리즘</div>
+                  <div class="pub-meta">C-2026-029334</div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">02</div>
+                <div class="pub-body">
+                  <div class="pub-title">체중 대푯값 모델</div>
+                  <div class="pub-meta">C-2025-043867</div>
+                </div>
+              </div>
+              <div class="pub-item">
+                <div class="pub-no">01</div>
+                <div class="pub-body">
+                  <div class="pub-title">수정계수 기반 젖소 총 착유량 예측 프로그램</div>
+                  <div class="pub-meta">C-2025-037304</div>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
       </div>
     </div>
@@ -163,9 +1706,18 @@
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
       <span class="en">Biosystems Modeling and Analysis Laboratory</span>
     </div>
-    <p>충남대학교 스마트농업시스템기계공학과</p>
-    <p>대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</p>
-    <p>Tel. +82-42-821-7869</p>
+    <p>
+      <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
+      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+    </p>
+    <p>
+      <span class="ko">(34134) 대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</span>
+      <span class="en">(34134) Room 2107, Building 2, College of Agriculture and Life Sciences, Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon</span>
+    </p>
+    <p>
+      <span class="ko">Tel. 042-821-7869</span>
+      <span class="en">Tel. +82-42-821-7869</span>
+    </p>
     <p style="margin-top:14px;">&copy; 2026 Biosystems Modeling and Analysis Laboratory. All rights reserved.</p>
   </div>
 </footer>
@@ -197,6 +1749,17 @@
     }
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+  })();
+
+  (function () {
+    document.querySelectorAll('.fold-head').forEach(function (head) {
+      head.addEventListener('click', function () {
+        var body = document.getElementById(head.getAttribute('aria-controls'));
+        var willOpen = head.getAttribute('aria-expanded') !== 'true';
+        head.setAttribute('aria-expanded', String(willOpen));
+        body.hidden = !willOpen;
+      });
+    });
   })();
 </script>
 </body>

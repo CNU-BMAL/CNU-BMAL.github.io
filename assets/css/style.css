@@ -32,6 +32,9 @@ a { color: inherit; }
 body[data-lang="ko"] .en { display: none; }
 body[data-lang="en"] .ko { display: none; }
 
+body[data-lang="en"] .h2-en.ko,
+body[data-lang="en"] .m-name-en.ko { display: block; visibility: hidden; }
+
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   height: var(--header-h);

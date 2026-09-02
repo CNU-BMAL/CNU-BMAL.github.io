@@ -16,39 +16,38 @@
 
   .hero-bg {
     position: absolute; inset: 0;
-    background: #14121a url("assets/img/hero.jpg") center/cover no-repeat;
+    background: #e8f1f7 url("assets/img/hero.jpg") center/cover no-repeat;
   }
 
   .hero-bg::after {
     content: ""; position: absolute; inset: 0;
     background:
-      linear-gradient(100deg, rgba(10,8,16,.86) 0%, rgba(10,8,16,.66) 42%, rgba(10,8,16,.32) 100%),
-      linear-gradient(180deg, rgba(10,8,16,.45) 0%, rgba(10,8,16,0) 26%);
+      linear-gradient(100deg, rgba(255,255,255,.72) 0%, rgba(255,255,255,.42) 46%, rgba(255,255,255,0) 100%);
   }
   .hero .wrap { position: relative; width: 100%; }
   .hero-eyebrow {
     font-size: 11px; letter-spacing: .22em; text-transform: uppercase;
-    color: rgba(255,255,255,.66); margin-bottom: 22px;
+    color: var(--muted); margin-bottom: 22px;
   }
 
   .hero h1 {
-    font-size: 62px; font-weight: 700; color: #fff;
+    font-size: 62px; font-weight: 700; color: var(--ink);
     letter-spacing: -.04em; line-height: 1.14;
     white-space: nowrap;
   }
   .hero p.lead {
-    margin-top: 26px; font-size: 16px; color: rgba(255,255,255,.82);
+    margin-top: 26px; font-size: 16px; color: var(--ink-soft);
     max-width: 50ch; font-style: italic;
   }
   .hero .btn-row { margin-top: 40px; display: flex; gap: 10px; flex-wrap: wrap; }
 
-  .hero .btn { border-color: rgba(255,255,255,.8); color: #fff; }
-  .hero .btn:hover { background: #fff; color: var(--ink); }
-  .hero .btn.ghost { border-color: rgba(255,255,255,.34); color: rgba(255,255,255,.8); }
-  .hero .btn.ghost:hover { background: #fff; border-color: #fff; color: var(--ink); }
+  .hero .btn { border-color: var(--ink); color: var(--ink); }
+  .hero .btn:hover { background: var(--ink); color: #fff; }
+  .hero .btn.ghost { border-color: rgba(26,26,26,.28); color: var(--muted); }
+  .hero .btn.ghost:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
   .scroll-cue {
     position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
-    font-size: 10.5px; letter-spacing: .18em; color: rgba(255,255,255,.55);
+    font-size: 10.5px; letter-spacing: .18em; color: rgba(26,26,26,.45);
   }
 
   .research-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); }
@@ -91,6 +90,15 @@
     .r-item { padding: 30px 24px 34px; }
     .about-grid { grid-template-columns: 1fr; gap: 36px; }
   }
+
+  .site-header.over-hero .gnb a,
+  .site-header.over-hero .lang-switch,
+  .site-header.over-hero .lang-switch button { color: var(--muted); }
+  .site-header.over-hero .gnb a:hover,
+  .site-header.over-hero .gnb a.active,
+  .site-header.over-hero .lang-switch button.on { color: var(--ink); }
+  .site-header.over-hero .lang-switch { border-left-color: var(--line); }
+  .site-header.over-hero .menu-toggle { color: var(--ink); }
 </style>
 </head>
 <body data-lang="ko">
@@ -210,9 +218,9 @@
       <span class="ko">실험실 소식</span>
       <span class="en">Lab News</span>
     </h2>
-    <a class="news-row" href="news.html"><span class="news-date">2026.00</span><span>소식 항목이 이 자리에 들어갑니다</span></a>
-    <a class="news-row" href="news.html"><span class="news-date">2026.00</span><span>소식 항목이 이 자리에 들어갑니다</span></a>
-    <a class="news-row" href="news.html"><span class="news-date">2026.00</span><span>소식 항목이 이 자리에 들어갑니다</span></a>
+    <a class="news-row" href="news-2026-07-27.html"><span class="news-date">2026.07</span><span>농업기계공학과 대학원생, 한국축산학회 국제 연합심포지엄서 발표상 수상</span></a>
+    <a class="news-row" href="news-2025-10-28.html"><span class="news-date">2025.10</span><span>충남대 농업생명과학대학, '세계 상위 2% 연구자'에 총 6명 선정</span></a>
+    <a class="news-row" href="news-2023-11-22.html"><span class="news-date">2023.11</span><span>스마트농업시스템학과 황정호, 윤선희 학생 과학기술정보통신부장관, 국립중앙과학관장상 수상</span></a>
     <a class="news-more" href="news.html">소식 전체 보기 →</a>
   </div>
 </section>
@@ -222,9 +230,18 @@
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
       <span class="en">Biosystems Modeling and Analysis Laboratory</span>
     </div>
-    <p>충남대학교 스마트농업시스템기계공학과</p>
-    <p>대전광역시 유성구 대학로 99 · 농업생명과학대학 2호관(E10-2) 2107호</p>
-    <p>Tel. +82-42-821-7869</p>
+    <p>
+      <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
+      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+    </p>
+    <p>
+      <span class="ko">(34134) 대전광역시 유성구 대학로 99 · 농업생명과학대학 2호관(E10-2) 2107호</span>
+      <span class="en">(34134) Room 2107, Building 2, College of Agriculture and Life Sciences, Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon</span>
+    </p>
+    <p>
+      <span class="ko">Tel. 042-821-7869</span>
+      <span class="en">Tel. +82-42-821-7869</span>
+    </p>
     <p style="margin-top:14px;">© 2026 Biosystems Modeling and Analysis Laboratory. All rights reserved.</p>
   </div>
 </footer>

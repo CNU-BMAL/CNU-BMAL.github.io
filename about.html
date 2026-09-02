@@ -73,7 +73,7 @@
       <div class="section-label">About</div>
       <h1 class="page-title">
         <span class="ko">실험실 소개</span>
-        <span class="en">About</span>
+        <span class="en">About the Lab</span>
       </h1>
     </div>
     <div class="subpage">
@@ -94,7 +94,10 @@
                 <span class="ko">이왕희</span>
                 <span class="en">Wang-Hee Lee</span>
               </div>
-              <div class="g-name-en">Wang-Hee Lee, Ph.D. &middot; Professor</div>
+              <div class="g-name-en">
+                <span class="ko">Wang-Hee Lee, Ph.D. | Professor</span>
+                <span class="en">Ph.D. | Professor</span>
+              </div>
               <div class="rule"></div>
               <p>
                 인사말 첫 문단이 이 자리에 들어갑니다. 실험실을 찾아준 방문자에 대한 환영과,
@@ -109,8 +112,8 @@
                 학생을 기다리는지, 그리고 연락은 어떻게 하면 되는지를 안내합니다.
               </p>
               <div class="signature">
-                <span class="ko">바이오시스템 모델링 및 분석 실험실 &middot; <strong>이왕희</strong></span>
-                <span class="en">Biosystems Modeling and Analysis Laboratory &middot; <strong>Wang-Hee Lee</strong></span>
+                <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
+                <span class="en">Biosystems Modeling and Analysis Laboratory</span>
               </div>
               <div class="link-row">
                 <a href="#" class="btn ghost">Google Scholar</a>
@@ -123,25 +126,37 @@
           <h2>Contact</h2>
           <div class="h2-en ko">연락처</div>
           <div class="info-row">
-            <div class="info-label">실험실</div>
-            <div>바이오시스템 모델링 및 분석 실험실<br>
-                 <span style="color:var(--muted); font-size:13px;">Biosystems Modeling and Analysis Laboratory</span></div>
+            <div class="info-label"><span class="ko">실험실</span><span class="en">Laboratory</span></div>
+            <div>
+              <span class="ko">바이오시스템 모델링 및 분석 실험실<br>
+                 <span style="color:var(--muted); font-size:13px;">Biosystems Modeling and Analysis Laboratory</span></span>
+              <span class="en">Biosystems Modeling and Analysis Laboratory</span>
+            </div>
           </div>
           <div class="info-row">
-            <div class="info-label">소속</div>
-            <div>충남대학교 스마트농업시스템기계공학과</div>
+            <div class="info-label"><span class="ko">소속</span><span class="en">Department</span></div>
+            <div>
+              <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
+              <span class="en">Chungnam National University<br>Smart Agriculture Systems Mechanical Engineering Department</span>
+            </div>
           </div>
           <div class="info-row">
-            <div class="info-label">주소</div>
-            <div>대전광역시 유성구 대학로 99<br>농업생명과학대학 2호관(E10-2) 2107호</div>
+            <div class="info-label"><span class="ko">주소</span><span class="en">Address</span></div>
+            <div>
+              <span class="ko">(34134) 대전광역시 유성구 대학로 99<br>농업생명과학대학 2호관(E10-2) 2107호</span>
+              <span class="en">(34134) Room 2107, Building 2, College of Agriculture and Life Sciences,<br>Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon</span>
+            </div>
           </div>
           <div class="info-row">
-            <div class="info-label">전화</div>
-            <div>+82-42-821-7869</div>
+            <div class="info-label"><span class="ko">전화</span><span class="en">Phone</span></div>
+            <div>
+              <span class="ko">042-821-7869</span>
+              <span class="en">+82-42-821-7869</span>
+            </div>
           </div>
           <div class="info-row">
-            <div class="info-label">이메일</div>
-            <div style="color:var(--muted);">이메일 주소 확인 필요</div>
+            <div class="info-label"><span class="ko">이메일</span><span class="en">Email</span></div>
+            <div data-eml="wanghee|cnu.ac.kr">wanghee [at] cnu [dot] ac [dot] kr</div>
           </div>
         </section>
         <section id="map">
@@ -168,9 +183,18 @@
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
       <span class="en">Biosystems Modeling and Analysis Laboratory</span>
     </div>
-    <p>충남대학교 스마트농업시스템기계공학과</p>
-    <p>대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</p>
-    <p>Tel. +82-42-821-7869</p>
+    <p>
+      <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
+      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+    </p>
+    <p>
+      <span class="ko">(34134) 대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</span>
+      <span class="en">(34134) Room 2107, Building 2, College of Agriculture and Life Sciences, Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon</span>
+    </p>
+    <p>
+      <span class="ko">Tel. 042-821-7869</span>
+      <span class="en">Tel. +82-42-821-7869</span>
+    </p>
     <p style="margin-top:14px;">&copy; 2026 Biosystems Modeling and Analysis Laboratory. All rights reserved.</p>
   </div>
 </footer>
@@ -202,6 +226,19 @@
     }
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+  })();
+
+  (function () {
+    document.querySelectorAll('[data-eml]').forEach(function (el) {
+      var p = el.getAttribute('data-eml').split('|');
+      if (p.length !== 2) return;
+      var addr = p[0] + String.fromCharCode(64) + p[1];
+      var a = document.createElement('a');
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+      el.textContent = '';
+      el.appendChild(a);
+    });
   })();
 </script>
 </body>
