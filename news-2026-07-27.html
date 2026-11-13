@@ -45,7 +45,7 @@
   <a class="brand" href="index.html">
     <span class="brand-affil">
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+      <span class="en">Smart Agriculture Systems Machinery Engineering, CNU</span>
     </span>
     <strong>
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
@@ -71,7 +71,7 @@
     <div style="padding-bottom: 96px;">
       <a class="a-back" href="news.html">&larr; <span class="ko">소식 목록</span><span class="en">Back to News</span></a>
       <div class="a-meta">
-        <span class="n-cat">수상</span>
+        <span class="n-cat"><span class="ko">수상</span><span class="en">Award</span></span>
         <span class="n-date">2026.07.27</span>
       </div>
       <h1 class="a-title">농업기계공학과 대학원생, 한국축산학회 국제 연합심포지엄서 발표상 수상</h1>
@@ -81,6 +81,7 @@
       </div>
       <div class="a-img"><img src="assets/img/news/2026-07-27.jpg" alt="농업기계공학과 대학원생, 한국축산학회 국제 연합심포지엄서 발표상 수상"></div>
       <div class="a-body">
+          <p class="en"><em>Original article in Korean.</em></p>
           <p>구두·포스터 발표 최우수상… 스마트 축산 연구역량 입증</p>
           <p>농업생명과학대학 농업기계공학과 대학원생(지도교수 이왕희)들이 국내 축산 분야 대표 학술대회에서 우수한 연구 성과를 인정받으며 발표상을 수상했다.</p>
           <p>(사)한국축산학회는 7월 8일~10일 제주국제컨벤션센터에서 &#x27;2026 국제 연합심포지엄 및 학술발표회&#x27;를 개최한 가운데 농업기계공학과 대학원생 송재우 박사과정과 이우경 석사과정이 각각 최우수상을 수상했다.</p>
@@ -103,7 +104,7 @@
     </div>
     <p>
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+      <span class="en">Department of Smart Agriculture Systems Machinery Engineering, Chungnam National University</span>
     </p>
     <p>
       <span class="ko">(34134) 대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</span>
@@ -139,6 +140,7 @@
     function onScroll() {
       var y = window.scrollY + 160, current = null;
       targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t.link; });
+      if (targets.length && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = targets[targets.length - 1].link;   // 바닥에 닿으면 마지막 섹션 (짧은 끝 섹션은 기준선까지 못 올라온다)
       links.forEach(function (a) { a.classList.remove('active'); });
       if (current) current.classList.add('active');
     }

@@ -16,13 +16,14 @@
 
   .hero-bg {
     position: absolute; inset: 0;
-    background: #e8f1f7 url("assets/img/hero.jpg") center/cover no-repeat;
+    background: #ffffff url("assets/img/hero-cnu.jpg") center/cover no-repeat;
+    opacity: .6;
   }
-
   .hero-bg::after {
     content: ""; position: absolute; inset: 0;
     background:
-      linear-gradient(100deg, rgba(255,255,255,.72) 0%, rgba(255,255,255,.42) 46%, rgba(255,255,255,0) 100%);
+      linear-gradient(180deg, #fff 0, rgba(255,255,255,.9) 85px, rgba(255,255,255,0) 190px),
+      linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.85) 38%, rgba(255,255,255,0) 72%);
   }
   .hero .wrap { position: relative; width: 100%; }
   .hero-eyebrow {
@@ -42,19 +43,16 @@
   .hero .btn-row { margin-top: 40px; display: flex; gap: 10px; flex-wrap: wrap; }
 
   .hero .btn { border-color: var(--ink); color: var(--ink); }
-  .hero .btn:hover { background: var(--ink); color: #fff; }
-  .hero .btn.ghost { border-color: rgba(26,26,26,.28); color: var(--muted); }
-  .hero .btn.ghost:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .hero .btn:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
   .scroll-cue {
     position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
     font-size: 10.5px; letter-spacing: .18em; color: rgba(26,26,26,.45);
   }
 
-  .research-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); }
-  .r-item { background: var(--bg); padding: 38px 36px 42px; }
+  .research-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); }
+  .r-item { background: var(--bg); padding: 34px 24px 38px; }
   .r-num { font-size: 11px; letter-spacing: .16em; color: var(--muted); margin-bottom: 16px; }
-  .r-item h3 { font-size: 17px; font-weight: 600; margin-bottom: 4px; letter-spacing: -.01em; }
-  .r-item .r-en { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+  .r-item h3 { font-size: 17px; font-weight: 600; margin-bottom: 14px; letter-spacing: -.01em; }
   .r-item p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.75; }
 
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: stretch; }
@@ -69,6 +67,7 @@
     display: grid; place-items: center;
     color: #b8b8b8; font-size: 11.5px; letter-spacing: .18em;
   }
+  .about-img { display: block; width: 100%; height: auto; aspect-ratio: 1160 / 800; border: 1px solid var(--line); }
   .about-figure figcaption { font-size: 11.5px; color: var(--muted); margin-top: 10px; }
 
   .news-row {
@@ -93,7 +92,7 @@
 
   .site-header.over-hero .gnb a,
   .site-header.over-hero .lang-switch,
-  .site-header.over-hero .lang-switch button { color: var(--muted); }
+  .site-header.over-hero .lang-switch button { color: var(--ink); }
   .site-header.over-hero .gnb a:hover,
   .site-header.over-hero .gnb a.active,
   .site-header.over-hero .lang-switch button.on { color: var(--ink); }
@@ -106,7 +105,7 @@
   <a class="brand" href="index.html">
     <span class="brand-affil">
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+      <span class="en">Smart Agriculture Systems Machinery Engineering, CNU</span>
     </span>
     <strong>
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
@@ -149,29 +148,33 @@
     </h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>
+        <p><span class="ko">
           바이오시스템은 생물학적 시스템(유전자 및 유전자 네트워크, 생화학적 경로 및 반응, 신진대사 등
           생물체 유지를 위한 모든 기능)뿐만 아니라 상호작용을 기반으로 다양한 조건에 많은 변화가
-          일어나는 농&middot;식품 시스템을 모두 포함한다.
-        </p>
-        <p>
+          일어나는 농&middot;식품 시스템을 모두 포함합니다.
+        </span><span class="en">Biosystems encompass not only biological systems (all functions for maintaining living organisms, including genes and gene networks, biochemical pathways and reactions, and metabolism) but also agricultural and food systems, which undergo extensive changes under diverse conditions based on interactions.</span></p>
+        <p><span class="ko">
           바이오시스템은 일반적인 공학 시스템과는 다른 독특한 성질을 갖기 때문에 바이오시스템을
-          분석하기 위해서는 시스템의 성질을 반영할 수 있는 효율적인 분석 도구가 필요하다. 가장
+          분석하기 위해서는 시스템의 성질을 반영할 수 있는 효율적인 분석 도구가 필요합니다. 가장
           직접적이고 명확한 방법으로는 실험적 분석 방법이 있으나, 이는 시간, 비용 및 인력을
           집약적으로 요구하는 경우가 많으며, 때로는 윤리적 혹은 기술적 한계로 인해 실험적 접근이
-          제한되는 경우가 발생한다.
-        </p>
-        <p>
+          제한되는 경우가 발생합니다.
+        </span><span class="en">Because biosystems possess unique characteristics distinct from general engineering systems, analyzing them requires efficient analytical tools capable of reflecting those properties. Although experimental analysis is the most direct and definitive approach, it often demands intensive time, cost, and labor, and is sometimes restricted by ethical or technical limitations.</span></p>
+        <p><span class="ko">
           바이오시스템 모델링은 바이오시스템과 모델링을 결합한 융복합 학문으로,
-          효과적이고 강력한 바이오시스템의 분석 도구이다. 시뮬레이션을 기반으로 한 시스템 특성 예측,
+          효과적이고 강력한 바이오시스템의 분석 도구입니다. 시뮬레이션을 기반으로 한 시스템 특성 예측,
           실험 데이터의 통합적인 분석 및 알려지지 않은 메커니즘의 규명 등 다양한 연구를 효과적으로
           수행할 수 있으며, 실험에 비해 상대적으로 적은 비용과 인력으로 시스템의 분석이 가능하므로,
-          실험의 한계를 보완할 수 있는 접근 방법이다.
-        </p>
+          실험의 한계를 보완할 수 있는 접근 방법입니다.
+        </span><span class="en">Biosystems modeling is an interdisciplinary field combining biosystems and modeling, serving as an effective and powerful analytical tool for biosystems. It enables diverse research, including simulation-based prediction of system characteristics, integrated analysis of experimental data, and elucidation of unknown mechanisms, and complements the limitations of experiments by allowing system analysis with relatively less cost and labor.</span></p>
       </div>
       <figure class="about-figure">
-        <div class="placeholder">IMAGE</div>
-        <figcaption>이미지 설명이 이 자리에 들어갑니다</figcaption>
+        <object class="about-img" type="image/svg+xml" data="assets/img/about-chart-types.svg"
+                aria-label="분석 목적에 따른 데이터 시각화 유형"></object>
+        <figcaption>
+          <span class="ko">분석 목적에 따른 데이터 시각화 유형</span>
+          <span class="en">Choosing a visualization by analysis purpose</span>
+        </figcaption>
       </figure>
     </div>
   </div>
@@ -186,27 +189,28 @@
     <div class="research-list">
       <article class="r-item">
         <div class="r-num">01</div>
-        <h3>바이오시스템 모델링</h3>
-        <div class="r-en">Biosystems Modeling</div>
-        <p>수학적·통계학적 방법을 농업 시스템에 적용하여 시스템의 반응을 설명하고 예측하는 모델을 개발하며, 시뮬레이션을 통해 시스템 특성을 분석합니다.</p>
+        <h3><span class="ko">바이오시스템 모델링</span><span class="en">Biosystems Modeling</span></h3>
+        <p><span class="ko">바이오시스템 모델링 및 모델기반 시스템 해석</span><span class="en">Biosystems modeling and model-based system analysis</span></p>
       </article>
       <article class="r-item">
         <div class="r-num">02</div>
-        <h3>데이터 처리 및 분석</h3>
-        <div class="r-en">Data Processing and Analysis</div>
-        <p>바이오시스템에서 축적되는 데이터를 통계 및 인공지능 기반으로 처리·가공·분석하여 의미 있는 정보를 추출하고, 시스템 모니터링과 의사결정 지원에 활용합니다.</p>
+        <h3><span class="ko">데이터 처리 및 분석</span><span class="en">Data Processing and Analysis</span></h3>
+        <p><span class="ko">수학-통계-인공지능-시뮬레이션 기반 데이터 분석</span><span class="en">Data analysis based on mathematics, statistics, artificial intelligence, and simulation</span></p>
       </article>
       <article class="r-item">
         <div class="r-num">03</div>
-        <h3>종분포 모델링</h3>
-        <div class="r-en">Species Distribution Modeling</div>
-        <p>기후변화에 대응하여 주요 농업·산림 병해충과 외래생물종의 유입 및 확산 가능성을 환경 인자를 바탕으로 공간적으로 예측하고 위험도를 평가합니다.</p>
+        <h3><span class="ko">알고리즘 구축</span><span class="en">Algorithm Development</span></h3>
+        <p><span class="ko">인공지능-통계 기반 데이터 분석 알고리즘 개발</span><span class="en">Development of data analysis algorithms based on artificial intelligence and statistics</span></p>
       </article>
       <article class="r-item">
         <div class="r-num">04</div>
-        <h3>알고리즘 및 공간정보 처리</h3>
-        <div class="r-en">Algorithm and Spatial Data Processing</div>
-        <p>인공지능·통계 기반의 데이터 분석 알고리즘을 개발하고, GIS 공간분석 기법과 기후·환경 데이터베이스를 구축하여 모델 구동 기반을 마련합니다.</p>
+        <h3><span class="ko">종분포 모델링</span><span class="en">Species Distribution Modeling</span></h3>
+        <p><span class="ko">종분포모델링 기반 기후변화대응 병해충 분포 예측</span><span class="en">Prediction of pest and disease distribution in response to climate change based on species distribution modeling (SDM)</span></p>
+      </article>
+      <article class="r-item">
+        <div class="r-num">05</div>
+        <h3><span class="ko">GIS 데이터 분석</span><span class="en">GIS Data Analysis</span></h3>
+        <p><span class="ko">공간분석기법을 활용한 농업 생태 위험성 분석</span><span class="en">Risk analysis of agricultural ecosystems using spatial analysis techniques</span></p>
       </article>
     </div>
   </div>
@@ -221,7 +225,7 @@
     <a class="news-row" href="news-2026-07-27.html"><span class="news-date">2026.07</span><span>농업기계공학과 대학원생, 한국축산학회 국제 연합심포지엄서 발표상 수상</span></a>
     <a class="news-row" href="news-2025-10-28.html"><span class="news-date">2025.10</span><span>충남대 농업생명과학대학, '세계 상위 2% 연구자'에 총 6명 선정</span></a>
     <a class="news-row" href="news-2023-11-22.html"><span class="news-date">2023.11</span><span>스마트농업시스템학과 황정호, 윤선희 학생 과학기술정보통신부장관, 국립중앙과학관장상 수상</span></a>
-    <a class="news-more" href="news.html">소식 전체 보기 →</a>
+    <a class="news-more" href="news.html"><span class="ko">소식 전체 보기 →</span><span class="en">View all news →</span></a>
   </div>
 </section>
 <footer class="site-footer">
@@ -232,7 +236,7 @@
     </div>
     <p>
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+      <span class="en">Department of Smart Agriculture Systems Machinery Engineering, Chungnam National University</span>
     </p>
     <p>
       <span class="ko">(34134) 대전광역시 유성구 대학로 99 · 농업생명과학대학 2호관(E10-2) 2107호</span>

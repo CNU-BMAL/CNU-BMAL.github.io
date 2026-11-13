@@ -12,7 +12,6 @@
     padding: 22px 0; border-bottom: 1px solid var(--line);
     text-decoration: none; color: inherit;
   }
-  .n-card:first-of-type { border-top: 1px solid var(--line); }
   .n-card img {
     width: 100%; aspect-ratio: 3 / 2; object-fit: cover;
     border: 1px solid var(--line);
@@ -42,7 +41,7 @@
   <a class="brand" href="index.html">
     <span class="brand-affil">
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+      <span class="en">Smart Agriculture Systems Machinery Engineering, CNU</span>
     </span>
     <strong>
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
@@ -72,12 +71,12 @@
         <span class="en">Latest Updates</span>
       </h1>
     </div>
-    <div style="padding: 44px 0 104px;">
+    <div style="padding: 22px 0 104px;">
       <a class="n-card" href="news-2026-07-27.html">
         <img src="assets/img/news/2026-07-27-thumb.jpg" alt="">
         <div>
           <div class="n-meta">
-            <span class="n-cat">수상</span>
+            <span class="n-cat"><span class="ko">수상</span><span class="en">Award</span></span>
             <span class="n-date">2026.07.27</span>
           </div>
           <div class="n-title">농업기계공학과 대학원생, 한국축산학회 국제 연합심포지엄서 발표상 수상</div>
@@ -88,7 +87,7 @@
         <img src="assets/img/news/2025-10-28-thumb.jpg" alt="">
         <div>
           <div class="n-meta">
-            <span class="n-cat">선정</span>
+            <span class="n-cat"><span class="ko">성과</span><span class="en">Achievement</span></span>
             <span class="n-date">2025.10.28</span>
           </div>
           <div class="n-title">충남대 농업생명과학대학, &#x27;세계 상위 2% 연구자&#x27;에 총 6명 선정</div>
@@ -99,7 +98,7 @@
         <img src="assets/img/news/2023-11-22-thumb.jpg" alt="">
         <div>
           <div class="n-meta">
-            <span class="n-cat">수상</span>
+            <span class="n-cat"><span class="ko">수상</span><span class="en">Award</span></span>
             <span class="n-date">2023.11.22</span>
           </div>
           <div class="n-title">스마트농업시스템학과 황정호, 윤선희 학생 과학기술정보통신부장관, 국립중앙과학관장상 수상</div>
@@ -117,7 +116,7 @@
     </div>
     <p>
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+      <span class="en">Department of Smart Agriculture Systems Machinery Engineering, Chungnam National University</span>
     </p>
     <p>
       <span class="ko">(34134) 대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</span>
@@ -153,6 +152,7 @@
     function onScroll() {
       var y = window.scrollY + 160, current = null;
       targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t.link; });
+      if (targets.length && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = targets[targets.length - 1].link;   // 바닥에 닿으면 마지막 섹션 (짧은 끝 섹션은 기준선까지 못 올라온다)
       links.forEach(function (a) { a.classList.remove('active'); });
       if (current) current.classList.add('active');
     }

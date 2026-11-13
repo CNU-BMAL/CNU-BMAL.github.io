@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 800" font-family="'Pretendard Variable', Pretendard, 'Segoe UI', 'Malgun Gothic', sans-serif" role="img" aria-label="Chart suggestions: what would you like to show?">
+<style>@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");</style>
+<rect width="1160" height="800" fill="#ffffff"/>
+<rect x="46.0" y="6.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="109.0" y="23" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Variable width chart</text>
+<path d="M58 33 V90 H160" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<rect x="61.0" y="50.1" width="12.0" height="39.9" fill="#003049" stroke="none"/>
+<rect x="74.0" y="67.2" width="30.0" height="22.8" fill="#f77f00" stroke="none"/>
+<rect x="105.0" y="33.0" width="14.0" height="57.0" fill="#fcbf49" stroke="none"/>
+<rect x="120.0" y="58.6" width="28.0" height="31.4" fill="#7f98a8" stroke="none"/>
+<rect x="181.0" y="6.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="244.0" y="23" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Table or tables with</text>
+<text x="244.0" y="37" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">embedded charts</text>
+<path d="M227.0 47 V90" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M261.0 47 V90" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M193 68.5 H295" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<rect x="193.0" y="47.0" width="102.0" height="43.0" fill="none" stroke="#e9e4d2"/>
+<rect x="199.0" y="58.8" width="4.0" height="6.8" fill="#003049" stroke="none"/>
+<rect x="205.0" y="54.7" width="4.0" height="10.8" fill="#f77f00" stroke="none"/>
+<rect x="233.0" y="83.0" width="4.0" height="4.0" fill="#003049" stroke="none"/>
+<rect x="239.0" y="77.5" width="4.0" height="9.4" fill="#f77f00" stroke="none"/>
+<rect x="245.0" y="80.2" width="4.0" height="6.8" fill="#fcbf49" stroke="none"/>
+<rect x="267.0" y="57.4" width="4.0" height="8.1" fill="#003049" stroke="none"/>
+<rect x="273.0" y="60.1" width="4.0" height="5.4" fill="#f77f00" stroke="none"/>
+<rect x="267.0" y="76.2" width="4.0" height="10.8" fill="#003049" stroke="none"/>
+<rect x="316.0" y="6.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="379.0" y="23" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Bar chart horizontal</text>
+<rect x="328.0" y="34.0" width="61.2" height="8.4" fill="#fcbf49" stroke="none"/>
+<rect x="328.0" y="45.4" width="45.9" height="8.4" fill="#7f98a8" stroke="none"/>
+<rect x="328.0" y="56.8" width="76.5" height="8.4" fill="#f77f00" stroke="none"/>
+<rect x="328.0" y="68.2" width="96.9" height="8.4" fill="#003049" stroke="none"/>
+<rect x="328.0" y="79.6" width="51.0" height="8.4" fill="#f77f00" stroke="none"/>
+<path d="M328 33 V90" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<rect x="451.0" y="6.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="514.0" y="23" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Bar chart vertical</text>
+<path d="M463 33 V90 H565" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<rect x="467.0" y="58.6" width="14.6" height="31.4" fill="#fcbf49" stroke="none"/>
+<rect x="486.6" y="61.5" width="14.6" height="28.5" fill="#7f98a8" stroke="none"/>
+<rect x="506.2" y="50.1" width="14.6" height="39.9" fill="#f77f00" stroke="none"/>
+<rect x="525.8" y="33.0" width="14.6" height="57.0" fill="#003049" stroke="none"/>
+<rect x="545.4" y="44.4" width="14.6" height="45.6" fill="#f77f00" stroke="none"/>
+<rect x="586.0" y="6.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="649.0" y="23" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Circular area chart</text>
+<path d="M649.0 61.5 L677.5 61.5" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M649.0 61.5 L669.2 81.7" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M649.0 61.5 L649.0 90.0" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M649.0 61.5 L628.8 81.7" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M649.0 61.5 L620.5 61.5" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M649.0 61.5 L628.8 41.3" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M649.0 61.5 L649.0 33.0" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M649.0 61.5 L669.2 41.3" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<polygon points="674.6,61.5 657.1,69.6 649.0,81.5 643.0,67.5 621.9,61.5 638.9,51.4 649.0,44.4 656.1,54.4" stroke="#003049" stroke-width="1.5" fill="#7f98a8" opacity="0.75" stroke-linejoin="round"/>
+<rect x="721.0" y="6.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="784.0" y="23" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Line chart</text>
+<path d="M733 33 V90 H835" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<path d="M747.6 90 v-3" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<path d="M762.1 90 v-3" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<path d="M776.7 90 v-3" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<path d="M791.3 90 v-3" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<path d="M805.9 90 v-3" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<path d="M820.4 90 v-3" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<polyline points="739.0,70.1 757.0,58.6 775.0,64.3 793.0,50.1 811.0,53.0 829.0,41.5" stroke="#003049" stroke-width="2" fill="none" opacity="1" stroke-linejoin="round"/>
+<rect x="856.0" y="6.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="919.0" y="23" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Bar chart vertical</text>
+<path d="M868 33 V90 H970" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<rect x="872.0" y="58.6" width="14.6" height="31.4" fill="#fcbf49" stroke="none"/>
+<rect x="891.6" y="61.5" width="14.6" height="28.5" fill="#7f98a8" stroke="none"/>
+<rect x="911.2" y="50.1" width="14.6" height="39.9" fill="#f77f00" stroke="none"/>
+<rect x="930.8" y="33.0" width="14.6" height="57.0" fill="#003049" stroke="none"/>
+<rect x="950.4" y="44.4" width="14.6" height="45.6" fill="#f77f00" stroke="none"/>
+<rect x="991.0" y="6.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="1054.0" y="23" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Line chart</text>
+<path d="M1003 33 V90 H1105" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<polyline points="1009.0,41.5 1031.5,47.2 1054.0,38.7 1076.5,44.4 1099.0,35.9" stroke="#7f98a8" stroke-width="2" fill="none" opacity="1" stroke-linejoin="round"/>
+<polyline points="1009.0,64.3 1031.5,55.8 1054.0,67.2 1076.5,58.6 1099.0,47.2" stroke="#f77f00" stroke-width="2" fill="none" opacity="1" stroke-linejoin="round"/>
+<polyline points="1009.0,78.6 1031.5,70.1 1054.0,75.8 1076.5,67.2 1099.0,72.9" stroke="#003049" stroke-width="2" fill="none" opacity="1" stroke-linejoin="round"/>
+<text x="109.0" y="120" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Two variables</text>
+<text x="109.0" y="134" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">per item</text>
+<text x="244.0" y="120" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Many</text>
+<text x="244.0" y="134" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">categories</text>
+<text x="649.0" y="120" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Cyclical data</text>
+<text x="784.0" y="120" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Non-cyclical data</text>
+<text x="919.0" y="120" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Single or few categories</text>
+<text x="1054.0" y="120" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Many categories</text>
+<path d="M379.0 100 V152 H514.0 V100" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="446.5" y="171" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Few categories</text>
+<path d="M446.5 152 V159 M446.5 177 V190" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<path d="M649.0 130 V152 H784.0 V130" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="716.5" y="171" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Many periods</text>
+<path d="M716.5 152 V159 M716.5 177 V190" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<path d="M919.0 130 V152 H1054.0 V130" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="986.5" y="171" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Few periods</text>
+<path d="M986.5 152 V159 M986.5 177 V190" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<path d="M244.0 144 V190 H446.5" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="345.25" y="212" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">One variable per item</text>
+<path d="M345.25 190 V199 M345.25 218 V232" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<path d="M109.0 144 V232 H345.25" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="227.125" y="254" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Among items</text>
+<path d="M227.125 232 V241 M227.125 260 V272" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<path d="M716.5 190 H986.5" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="851.5" y="212" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Over time</text>
+<path d="M851.5 190 V199 M851.5 218 V272" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<path d="M227.125 272 H851.5 M580.0 272 V290" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="580.0" y="318" font-size="23" font-weight="700" fill="#1a1a1a" text-anchor="middle">Comparison</text>
+<rect x="472.0" y="340.0" width="216.0" height="122.0" fill="#003049" stroke="none"/>
+<text x="580.0" y="395" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">What would you</text>
+<text x="580.0" y="423" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">like to show?</text>
+<rect x="12.0" y="300.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="75.0" y="317" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Scatter plot</text>
+<path d="M24 327.0 H126" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M24 346.0 H126" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M24 365.0 H126" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M24 384.0 H126" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<circle cx="34.2" cy="344.1" r="3.6" fill="#f77f00" opacity="1"/>
+<circle cx="44.4" cy="355.5" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="54.6" cy="338.4" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="64.8" cy="361.2" r="3.6" fill="#f77f00" opacity="1"/>
+<circle cx="75.0" cy="346.9" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="85.2" cy="366.9" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="95.4" cy="355.5" r="3.6" fill="#f77f00" opacity="1"/>
+<circle cx="105.6" cy="372.6" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="39.3" cy="369.8" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="69.9" cy="375.4" r="3.6" fill="#f77f00" opacity="1"/>
+<circle cx="115.8" cy="349.8" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="90.3" cy="338.4" r="3.6" fill="#003049" opacity="1"/>
+<rect x="12.0" y="408.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="75.0" y="425" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Scatter plot</text>
+<text x="75.0" y="439" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">bubble size</text>
+<path d="M24 449 V492 H126" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<circle cx="39.3" cy="479.1" r="3" fill="#7f98a8" opacity="0.85"/>
+<circle cx="54.6" cy="466.2" r="7" fill="#fcbf49" opacity="0.85"/>
+<circle cx="69.9" cy="481.2" r="5" fill="#f77f00" opacity="0.85"/>
+<circle cx="80.1" cy="461.9" r="4" fill="#003049" opacity="0.85"/>
+<circle cx="95.4" cy="474.8" r="9" fill="#7f98a8" opacity="0.85"/>
+<circle cx="110.7" cy="459.8" r="5" fill="#f77f00" opacity="0.85"/>
+<text x="150" y="322" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="start">Two</text>
+<text x="150" y="336" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="start">variables</text>
+<text x="150" y="474" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="start">Three</text>
+<text x="150" y="488" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="start">variables</text>
+<path d="M138 347 H205 V455 H138 M205 401 H312" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="456" y="409" font-size="23" font-weight="700" fill="#1a1a1a" text-anchor="end">Relationship</text>
+<text x="702" y="409" font-size="23" font-weight="700" fill="#1a1a1a" text-anchor="start">Distribution</text>
+<rect x="1020.0" y="252.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="1083.0" y="269" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Bar histogram</text>
+<path d="M1032 279 V336 H1134" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<rect x="1036.0" y="313.2" width="18.8" height="22.8" fill="#f77f00" stroke="#fff"/>
+<rect x="1054.8" y="296.1" width="18.8" height="39.9" fill="#fcbf49" stroke="#fff"/>
+<rect x="1073.6" y="279.0" width="18.8" height="57.0" fill="#003049" stroke="#fff"/>
+<rect x="1092.4" y="293.2" width="18.8" height="42.8" fill="#7f98a8" stroke="#fff"/>
+<rect x="1111.2" y="310.4" width="18.8" height="25.7" fill="#fcbf49" stroke="#fff"/>
+<rect x="1020.0" y="356.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="1083.0" y="373" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Line histogram</text>
+<path d="M1032 383 V440 H1134" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<polyline points="1036.0,439.6 1038.3,439.4 1040.7,439.0 1043.0,438.4 1045.4,437.7 1047.8,436.6 1050.1,435.2 1052.5,433.3 1054.8,430.9 1057.2,427.9 1059.5,424.4 1061.8,420.3 1064.2,415.7 1066.5,410.9 1068.9,405.8 1071.2,400.9 1073.6,396.4 1076.0,392.5 1078.3,389.5 1080.7,387.6 1083.0,387.0 1085.3,387.6 1087.7,389.5 1090.0,392.5 1092.4,396.4 1094.8,400.9 1097.1,405.8 1099.5,410.9 1101.8,415.7 1104.2,420.3 1106.5,424.4 1108.8,427.9 1111.2,430.9 1113.5,433.3 1115.9,435.2 1118.2,436.6 1120.6,437.7 1123.0,438.4 1125.3,439.0 1127.7,439.4 1130.0,439.6" stroke="#003049" stroke-width="2" fill="none" opacity="1" stroke-linejoin="round"/>
+<rect x="1020.0" y="462.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="1083.0" y="479" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Scatter plot</text>
+<path d="M1032 489.0 H1134" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M1032 508.0 H1134" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M1032 527.0 H1134" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<path d="M1032 546.0 H1134" stroke="#e9e4d2" stroke-width="1" fill="none"/>
+<circle cx="1042.2" cy="506.1" r="3.6" fill="#f77f00" opacity="1"/>
+<circle cx="1052.4" cy="517.5" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="1062.6" cy="500.4" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="1072.8" cy="523.2" r="3.6" fill="#f77f00" opacity="1"/>
+<circle cx="1083.0" cy="508.9" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="1093.2" cy="528.9" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="1103.4" cy="517.5" r="3.6" fill="#f77f00" opacity="1"/>
+<circle cx="1113.6" cy="534.6" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="1047.3" cy="531.8" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="1077.9" cy="537.5" r="3.6" fill="#f77f00" opacity="1"/>
+<circle cx="1123.8" cy="511.8" r="3.6" fill="#003049" opacity="1"/>
+<circle cx="1098.3" cy="500.4" r="3.6" fill="#003049" opacity="1"/>
+<path d="M846 401 H888 V509 H1020 M888 351 H955 M955 299 V403 M955 299 H1020 M955 403 H1020" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="988" y="277" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Few data</text>
+<text x="988" y="291" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">points</text>
+<text x="988" y="420" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Many data</text>
+<text x="988" y="434" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">points</text>
+<text x="921" y="330" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Single</text>
+<text x="921" y="344" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">variable</text>
+<text x="954" y="492" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Two variables</text>
+<text x="580.0" y="500" font-size="23" font-weight="700" fill="#1a1a1a" text-anchor="middle">Composition</text>
+<rect x="46.0" y="698.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="109.0" y="715" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Stacked 100%</text>
+<text x="109.0" y="729" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">bar chart</text>
+<rect x="61.0" y="739.0" width="18.0" height="7.2" fill="#003049" stroke="#fff"/>
+<rect x="61.0" y="746.2" width="18.0" height="14.3" fill="#f77f00" stroke="#fff"/>
+<rect x="61.0" y="760.5" width="18.0" height="21.5" fill="#fcbf49" stroke="#fff"/>
+<rect x="85.0" y="739.0" width="18.0" height="14.3" fill="#003049" stroke="#fff"/>
+<rect x="85.0" y="753.3" width="18.0" height="21.5" fill="#f77f00" stroke="#fff"/>
+<rect x="85.0" y="774.8" width="18.0" height="7.2" fill="#fcbf49" stroke="#fff"/>
+<rect x="109.0" y="739.0" width="18.0" height="21.5" fill="#003049" stroke="#fff"/>
+<rect x="109.0" y="760.5" width="18.0" height="7.2" fill="#f77f00" stroke="#fff"/>
+<rect x="109.0" y="767.7" width="18.0" height="14.3" fill="#fcbf49" stroke="#fff"/>
+<rect x="133.0" y="739.0" width="18.0" height="7.2" fill="#003049" stroke="#fff"/>
+<rect x="133.0" y="746.2" width="18.0" height="14.3" fill="#f77f00" stroke="#fff"/>
+<rect x="133.0" y="760.5" width="18.0" height="21.5" fill="#fcbf49" stroke="#fff"/>
+<rect x="181.0" y="698.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="244.0" y="715" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Stacked bar chart</text>
+<path d="M193 725 V782 H295" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<rect x="196.0" y="730.7" width="18.0" height="8.6" fill="#003049" stroke="#fff"/>
+<rect x="196.0" y="739.2" width="18.0" height="17.1" fill="#f77f00" stroke="#fff"/>
+<rect x="196.0" y="756.4" width="18.0" height="25.7" fill="#fcbf49" stroke="#fff"/>
+<rect x="220.0" y="750.6" width="18.0" height="10.5" fill="#003049" stroke="#fff"/>
+<rect x="220.0" y="761.1" width="18.0" height="15.7" fill="#f77f00" stroke="#fff"/>
+<rect x="220.0" y="776.8" width="18.0" height="5.2" fill="#fcbf49" stroke="#fff"/>
+<rect x="244.0" y="739.2" width="18.0" height="21.4" fill="#003049" stroke="#fff"/>
+<rect x="244.0" y="760.6" width="18.0" height="7.1" fill="#f77f00" stroke="#fff"/>
+<rect x="244.0" y="767.8" width="18.0" height="14.2" fill="#fcbf49" stroke="#fff"/>
+<rect x="268.0" y="759.2" width="18.0" height="3.8" fill="#003049" stroke="#fff"/>
+<rect x="268.0" y="763.0" width="18.0" height="7.6" fill="#f77f00" stroke="#fff"/>
+<rect x="268.0" y="770.6" width="18.0" height="11.4" fill="#fcbf49" stroke="#fff"/>
+<rect x="316.0" y="698.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="379.0" y="715" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Stacked 100%</text>
+<text x="379.0" y="729" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">area chart</text>
+<polygon points="328.0,769.1 353.5,764.8 379.0,771.2 404.5,767.0 430.0,769.1 430.0,782.0 404.5,782.0 379.0,782.0 353.5,782.0 328.0,782.0" stroke="#fff" stroke-width="0.8" fill="#003049" opacity="1" stroke-linejoin="round"/>
+<polygon points="328.0,756.2 353.5,756.2 379.0,756.2 404.5,756.2 430.0,754.1 430.0,769.1 404.5,767.0 379.0,771.2 353.5,764.8 328.0,769.1" stroke="#fff" stroke-width="0.8" fill="#f77f00" opacity="1" stroke-linejoin="round"/>
+<polygon points="328.0,739.0 353.5,739.0 379.0,739.0 404.5,739.0 430.0,739.0 430.0,754.1 404.5,756.2 379.0,756.2 353.5,756.2 328.0,756.2" stroke="#fff" stroke-width="0.8" fill="#fcbf49" opacity="1" stroke-linejoin="round"/>
+<rect x="451.0" y="698.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="514.0" y="715" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Stacked area chart</text>
+<polygon points="463.0,767.8 488.5,762.0 514.0,770.6 539.5,759.2 565.0,764.9 565.0,782.0 539.5,782.0 514.0,782.0 488.5,782.0 463.0,782.0" stroke="#fff" stroke-width="0.8" fill="#003049" opacity="1" stroke-linejoin="round"/>
+<polygon points="463.0,756.4 488.5,744.9 514.0,750.6 539.5,747.8 565.0,747.8 565.0,764.9 539.5,759.2 514.0,770.6 488.5,762.0 463.0,767.8" stroke="#fff" stroke-width="0.8" fill="#f77f00" opacity="1" stroke-linejoin="round"/>
+<polygon points="463.0,747.8 488.5,733.5 514.0,744.9 539.5,733.6 565.0,739.2 565.0,747.8 539.5,747.8 514.0,750.6 488.5,744.9 463.0,756.4" stroke="#fff" stroke-width="0.8" fill="#fcbf49" opacity="1" stroke-linejoin="round"/>
+<rect x="586.0" y="698.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="649.0" y="715" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Pie chart</text>
+<path d="M649.0 753.5 L649.0 725.0 A28.5 28.5 0 0 1 662.7 778.5 Z" stroke="#fff" stroke-width="1" fill="#003049"/>
+<path d="M649.0 753.5 L662.7 778.5 A28.5 28.5 0 0 1 624.0 767.2 Z" stroke="#fff" stroke-width="1" fill="#7f98a8"/>
+<path d="M649.0 753.5 L624.0 767.2 A28.5 28.5 0 0 1 623.2 741.4 Z" stroke="#fff" stroke-width="1" fill="#fcbf49"/>
+<path d="M649.0 753.5 L623.2 741.4 A28.5 28.5 0 0 1 635.3 728.5 Z" stroke="#fff" stroke-width="1" fill="#f77f00"/>
+<path d="M649.0 753.5 L635.3 728.5 A28.5 28.5 0 0 1 649.0 725.0 Z" stroke="#fff" stroke-width="1" fill="#d62828"/>
+<rect x="721.0" y="698.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="784.0" y="715" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Waterfall chart</text>
+<path d="M733 725 V782 H835" stroke="#b5b5b5" stroke-width="1" fill="none"/>
+<rect x="737.0" y="756.4" width="13.8" height="25.7" fill="#7f98a8" stroke="none"/>
+<rect x="755.8" y="742.1" width="13.8" height="14.2" fill="#f77f00" stroke="none"/>
+<rect x="774.6" y="742.1" width="13.8" height="8.5" fill="#003049" stroke="none"/>
+<rect x="793.4" y="727.9" width="13.8" height="14.2" fill="#f77f00" stroke="none"/>
+<rect x="812.2" y="739.2" width="13.8" height="42.8" fill="#7f98a8" stroke="none"/>
+<rect x="856.0" y="698.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="919.0" y="715" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Stacked 100% bar chart</text>
+<text x="919.0" y="729" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">w/ subcomponents</text>
+<rect x="871.0" y="739.0" width="18.0" height="4.8" fill="#003049" stroke="#fff"/>
+<rect x="871.0" y="743.8" width="18.0" height="9.6" fill="#f77f00" stroke="#fff"/>
+<rect x="871.0" y="753.3" width="18.0" height="14.3" fill="#fcbf49" stroke="#fff"/>
+<rect x="871.0" y="767.7" width="18.0" height="4.8" fill="#d62828" stroke="#fff"/>
+<rect x="871.0" y="772.4" width="18.0" height="9.6" fill="#7f98a8" stroke="#fff"/>
+<rect x="895.0" y="739.0" width="18.0" height="7.8" fill="#003049" stroke="#fff"/>
+<rect x="895.0" y="746.8" width="18.0" height="11.7" fill="#f77f00" stroke="#fff"/>
+<rect x="895.0" y="758.5" width="18.0" height="3.9" fill="#fcbf49" stroke="#fff"/>
+<rect x="895.0" y="762.5" width="18.0" height="7.8" fill="#d62828" stroke="#fff"/>
+<rect x="895.0" y="770.3" width="18.0" height="11.7" fill="#7f98a8" stroke="#fff"/>
+<rect x="919.0" y="739.0" width="18.0" height="12.9" fill="#003049" stroke="#fff"/>
+<rect x="919.0" y="751.9" width="18.0" height="4.3" fill="#f77f00" stroke="#fff"/>
+<rect x="919.0" y="756.2" width="18.0" height="8.6" fill="#fcbf49" stroke="#fff"/>
+<rect x="919.0" y="764.8" width="18.0" height="12.9" fill="#d62828" stroke="#fff"/>
+<rect x="919.0" y="777.7" width="18.0" height="4.3" fill="#7f98a8" stroke="#fff"/>
+<rect x="943.0" y="739.0" width="18.0" height="4.8" fill="#003049" stroke="#fff"/>
+<rect x="943.0" y="743.8" width="18.0" height="9.6" fill="#f77f00" stroke="#fff"/>
+<rect x="943.0" y="753.3" width="18.0" height="14.3" fill="#fcbf49" stroke="#fff"/>
+<rect x="943.0" y="767.7" width="18.0" height="4.8" fill="#d62828" stroke="#fff"/>
+<rect x="943.0" y="772.4" width="18.0" height="9.6" fill="#7f98a8" stroke="#fff"/>
+<rect x="991.0" y="698.0" width="126.0" height="94.0" fill="#ffffff" stroke="#d9d3bd"/>
+<text x="1054.0" y="715" font-size="11.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Tree map</text>
+<rect x="1003.0" y="725.0" width="38.8" height="57.0" fill="#fcbf49" stroke="#fff"/>
+<rect x="1041.8" y="725.0" width="30.6" height="31.4" fill="#003049" stroke="#fff"/>
+<rect x="1041.8" y="756.4" width="30.6" height="25.7" fill="#7f98a8" stroke="#fff"/>
+<rect x="1072.4" y="725.0" width="32.6" height="22.8" fill="#f77f00" stroke="#fff"/>
+<rect x="1072.4" y="747.8" width="17.3" height="34.2" fill="#003049" stroke="#fff"/>
+<rect x="1089.7" y="747.8" width="15.3" height="17.1" fill="#7f98a8" stroke="#fff"/>
+<rect x="1089.7" y="764.9" width="15.3" height="17.1" fill="#eae2b7" stroke="#fff"/>
+<text x="109.0" y="667" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Only relative</text>
+<text x="109.0" y="681" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">differences matter</text>
+<path d="M109.0 640 V654" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="244.0" y="667" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Relative and absolute</text>
+<text x="244.0" y="681" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">differences matter</text>
+<path d="M244.0 640 V654" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="379.0" y="667" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Only relative</text>
+<text x="379.0" y="681" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">differences matter</text>
+<path d="M379.0 640 V654" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="514.0" y="667" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Relative and absolute</text>
+<text x="514.0" y="681" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">differences matter</text>
+<path d="M514.0 640 V654" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="649.0" y="667" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Simple share</text>
+<text x="649.0" y="681" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">of total</text>
+<path d="M649.0 640 V654" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="784.0" y="667" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Accumulation or</text>
+<text x="784.0" y="681" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">subtraction to total</text>
+<path d="M784.0 640 V654" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="919.0" y="667" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Components of</text>
+<text x="919.0" y="681" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">components</text>
+<path d="M919.0 640 V654" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="1054.0" y="667" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Accumulation to total &amp;</text>
+<text x="1054.0" y="681" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">absolute difference matters</text>
+<path d="M1054.0 640 V654" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<path d="M109.0 640 H244.0 M379.0 640 H514.0 M649.0 640 H1054.0" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<path d="M176.5 640 V612 H446.5 V640" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="176.5" y="605" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Few periods</text>
+<text x="446.5" y="605" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Many periods</text>
+<text x="311.5" y="566" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Changing</text>
+<text x="311.5" y="580" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">over time</text>
+<path d="M311.5 612 V586 M311.5 553 V526" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+<text x="851.5" y="576" font-size="11" font-weight="400" fill="#4a4a4a" text-anchor="middle">Static</text>
+<path d="M851.5 640 V585 M851.5 562 V526 M311.5 526 H851.5 M580.0 510 V526" stroke="#9a9a9a" stroke-width="1" fill="none"/>
+</svg>

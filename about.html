@@ -9,6 +9,8 @@
 
   .greeting-grid { display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: stretch; }
   .prof-photo { height: 100%; min-height: 420px; }
+  img.prof-photo { width: 100%; height: auto; min-height: 0; aspect-ratio: 3 / 4; object-fit: cover;
+                   align-self: start; border: 1px solid var(--line); }
   .greeting-body .g-name { font-size: 22px; font-weight: 600; letter-spacing: -.02em; }
   .greeting-body .g-name-en { font-size: 13px; color: var(--muted); margin-top: 4px; }
   .greeting-body .rule { height: 1px; background: var(--ink); width: 68px; margin: 22px 0 30px; }
@@ -46,7 +48,7 @@
   <a class="brand" href="index.html">
     <span class="brand-affil">
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+      <span class="en">Smart Agriculture Systems Machinery Engineering, CNU</span>
     </span>
     <strong>
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
@@ -86,7 +88,6 @@
       <div class="subpage-body">
         <section id="greeting">
           <h2>Greeting</h2>
-          <div class="h2-en ko">인사말</div>
           <div class="greeting-grid">
             <div class="ph prof-photo">PHOTO</div>
             <div class="greeting-body">
@@ -116,15 +117,14 @@
                 <span class="en">Biosystems Modeling and Analysis Laboratory</span>
               </div>
               <div class="link-row">
-                <a href="#" class="btn ghost">Google Scholar</a>
-                <a href="#" class="btn ghost">ResearchGate</a>
+                <a href="https://scholar.google.com/citations?user=TbnJ7c8AAAAJ" class="btn ghost" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <a href="https://www.researchgate.net/scientific-contributions/Wang-Hee-Lee-2033523513" class="btn ghost" target="_blank" rel="noopener noreferrer">ResearchGate</a>
               </div>
             </div>
           </div>
         </section>
         <section id="contact">
           <h2>Contact</h2>
-          <div class="h2-en ko">연락처</div>
           <div class="info-row">
             <div class="info-label"><span class="ko">실험실</span><span class="en">Laboratory</span></div>
             <div>
@@ -137,7 +137,7 @@
             <div class="info-label"><span class="ko">소속</span><span class="en">Department</span></div>
             <div>
               <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-              <span class="en">Chungnam National University<br>Smart Agriculture Systems Mechanical Engineering Department</span>
+              <span class="en">Department of Smart Agriculture Systems Machinery Engineering,<br>Chungnam National University</span>
             </div>
           </div>
           <div class="info-row">
@@ -161,7 +161,6 @@
         </section>
         <section id="map">
           <h2>Directions</h2>
-          <div class="h2-en ko">오시는 길</div>
           <iframe
             class="map-frame"
             src="https://www.google.com/maps?q=%EC%B6%A9%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%20%EB%86%8D%EC%97%85%EC%83%9D%EB%AA%85%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%202%ED%98%B8%EA%B4%80&hl=ko&z=17&output=embed"
@@ -185,7 +184,7 @@
     </div>
     <p>
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+      <span class="en">Department of Smart Agriculture Systems Machinery Engineering, Chungnam National University</span>
     </p>
     <p>
       <span class="ko">(34134) 대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</span>
@@ -221,6 +220,7 @@
     function onScroll() {
       var y = window.scrollY + 160, current = null;
       targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t.link; });
+      if (targets.length && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = targets[targets.length - 1].link;   // 바닥에 닿으면 마지막 섹션 (짧은 끝 섹션은 기준선까지 못 올라온다)
       links.forEach(function (a) { a.classList.remove('active'); });
       if (current) current.classList.add('active');
     }

@@ -45,7 +45,7 @@
   <a class="brand" href="index.html">
     <span class="brand-affil">
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+      <span class="en">Smart Agriculture Systems Machinery Engineering, CNU</span>
     </span>
     <strong>
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
@@ -71,7 +71,7 @@
     <div style="padding-bottom: 96px;">
       <a class="a-back" href="news.html">&larr; <span class="ko">소식 목록</span><span class="en">Back to News</span></a>
       <div class="a-meta">
-        <span class="n-cat">수상</span>
+        <span class="n-cat"><span class="ko">수상</span><span class="en">Award</span></span>
         <span class="n-date">2023.11.22</span>
       </div>
       <h1 class="a-title">스마트농업시스템학과 황정호, 윤선희 학생 과학기술정보통신부장관, 국립중앙과학관장상 수상</h1>
@@ -81,6 +81,7 @@
       </div>
       <div class="a-img"><img src="assets/img/news/2023-11-22.jpg" alt="스마트농업시스템학과 황정호, 윤선희 학생 과학기술정보통신부장관, 국립중앙과학관장상 수상"></div>
       <div class="a-body">
+          <p class="en"><em>Original article in Korean.</em></p>
           <p>농업생명과학대학 바이오시스템기계공학과 이왕희교수의 지도학생인 스마트농업시스템학과 황정호 박사수료생이 과학기술정보통신부장관상을 수상하였으며, 윤선희 박사과정생이 국립중앙과학관장상을 수상하였다.</p>
           <p>황정호 박사수료생은 세계생물다양성정보기구(GBIF) 데이터를 활용하여 벼 재배의 해충인 Leptocorisa속 3종의 주요해충을 Maxent를 통해 잠재적분포를 평가하고 지속적인 병해충 방제의 필요성을 제시하여 연구활성화에 기여한 공로를 인정받았으며, SCI논문 Evaluation of Spatial Distribution of Three Major Leptocorisa (Hemiptera: Alydidae) Pests Using MaxEnt Model (IF: 3)을 게재하였다.</p>
           <p>윤선희 박사과정생은 GBIF 데이터 활용 우수 연구자상을 수상하였으며, 이는 세계생물다양성정보기구(GBIF) 데이터를 종분포 모델에 활용하여 통계적 방법 적용을 통한 생물기후변수의 선택 및 서로 다른 모델 간의 성능을 평가하는 방법을 제시하여 연구활성화에 기여한 공로를 인정받은 결과이다. 또한 윤선희 대학원생은 BK21 FOUR 전주기적 스마트농업 혁신기술 융복합 인재양성 사업단의 참여대학원생으로 SCI논문 Methodological analysis of bioclimatic variable selection in species distribution modeling with application to agricultural pests (Metcalfa pruinosa and Spodoptera litura) (IF: 8.3)을 게재하였다.</p>
@@ -101,7 +102,7 @@
     </div>
     <p>
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+      <span class="en">Department of Smart Agriculture Systems Machinery Engineering, Chungnam National University</span>
     </p>
     <p>
       <span class="ko">(34134) 대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</span>
@@ -137,6 +138,7 @@
     function onScroll() {
       var y = window.scrollY + 160, current = null;
       targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t.link; });
+      if (targets.length && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = targets[targets.length - 1].link;   // 바닥에 닿으면 마지막 섹션 (짧은 끝 섹션은 기준선까지 못 올라온다)
       links.forEach(function (a) { a.classList.remove('active'); });
       if (current) current.classList.add('active');
     }

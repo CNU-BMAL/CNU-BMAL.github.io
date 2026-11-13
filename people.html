@@ -7,10 +7,14 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <style>
 
-  .member-list { display: grid; grid-template-columns: 1fr; gap: 48px; }
+  .member-list { display: grid; grid-template-columns: 1fr 1fr; gap: 48px 56px; }
   .member-head { display: grid; grid-template-columns: 96px 1fr; gap: 18px; align-items: start; }
   .member-body { margin-top: 24px; }
-  .prof-block { display: grid; grid-template-columns: 160px 1fr; gap: 34px; align-items: start; }
+  .prof-row { display: grid; grid-template-columns: 1fr 1fr; gap: 48px 56px; align-items: start; }
+  .prof-block { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: start; }
+
+  .prof-lines { margin-top: 14px; }
+  .prof-info p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.7; margin-bottom: 5px; }
 
   .photo { aspect-ratio: 3 / 4; }
   img.photo { width: 100%; object-fit: cover; border: 1px solid var(--line); }
@@ -30,15 +34,17 @@
     content: "\2013"; position: absolute; left: 0; color: var(--muted);
   }
   .prof-block ul { margin-top: 12px; }
+  .prof-links a, .prof-info [data-eml] a { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 3px; }
+  .prof-links a:hover { color: var(--ink); }
   .m-pub { margin-top: 16px; font-size: 12.5px; color: var(--muted); line-height: 1.65; }
   .m-pub span.lbl { display: block; color: #a8a8a8; margin-bottom: 2px; }
 
   .prof-block .m-name { font-size: 20px; }
 
-  .prof-cv { margin-top: 44px; }
+  .prof-cv { margin-top: 0; }
   .cv-head {
     font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase;
-    color: var(--muted); margin: 0 0 14px;
+    color: var(--label); margin: 0 0 14px;
   }
   .cv-item {
     display: flex; gap: 32px; padding: 11px 0;
@@ -56,7 +62,7 @@
   .alumni-item .a-name-en { color: var(--muted); font-size: 12.5px; }
 
   @media (max-width: 900px) {
-    .member-list { gap: 36px; }
+    .member-list, .prof-row { grid-template-columns: 1fr; gap: 36px; }
     .prof-block { grid-template-columns: 120px 1fr; gap: 20px; }
     .cv-item, .alumni-item { flex-direction: column; gap: 4px; }
   }
@@ -67,7 +73,7 @@
   <a class="brand" href="index.html">
     <span class="brand-affil">
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+      <span class="en">Smart Agriculture Systems Machinery Engineering, CNU</span>
     </span>
     <strong>
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
@@ -110,20 +116,23 @@
       <div class="subpage-body">
         <section id="professor">
           <h2>Professor</h2>
-          <div class="h2-en ko">지도교수</div>
+          <div class="prof-row">
           <div class="prof-block">
             <div class="ph photo">PHOTO</div>
-            <div>
+            <div class="prof-info">
               <div class="m-name"><span class="ko">이왕희</span><span class="en">Wang-Hee Lee</span></div>
-              <div class="m-name-en ko">Wang-Hee Lee, Ph.D. &middot; Professor</div>
-              <span class="m-role"><span class="ko">지도교수</span><span class="en">Professor</span></span>
-              <div class="m-email" data-eml="wanghee|cnu.ac.kr">wanghee [at] cnu [dot] ac [dot] kr</div>
-              <ul>
-                <li>바이오시스템 모델링 및 모델기반 시스템/데이터 분석</li>
-                <li>수학-통계-시뮬레이션 기반 농업/식품/축산/환경/생태 데이터 분석</li>
-                <li>종분포 모델링을 이용한 기후변화대응 해충 잠재적 분포 예측</li>
-                <li>공간분석기법을 활용한 농업 생태 위험성 분석</li>
-              </ul>
+              <div class="m-name-en ko">Wang-Hee Lee, Ph.D.</div>
+              <span class="m-role"><span class="ko">교수</span><span class="en">Professor</span></span>
+              <div class="prof-lines">
+              <p><span class="ko">스마트농업시스템기계공학과</span><span class="en">Department of Smart Agriculture Systems Machinery Engineering</span></p>
+              <p><span class="ko">충남대학교 농업생명과학대학</span><span class="en">College of Agriculture and Life Sciences, Chungnam National University</span></p>
+              <p><span class="ko">042-821-6720</span><span class="en">+82-42-821-6720</span> &nbsp;/&nbsp; <span data-eml="wanghee|cnu.ac.kr">wanghee [at] cnu [dot] ac [dot] kr</span></p>
+              <p class="prof-links">
+                <a href="https://scholar.google.com/citations?user=TbnJ7c8AAAAJ&amp;hl=ko" target="_blank" rel="noopener noreferrer">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://www.researchgate.net/scientific-contributions/Wang-Hee-Lee-2033523513" target="_blank" rel="noopener noreferrer">ResearchGate</a> &nbsp;/&nbsp;
+                <a href="https://bme.cnu.ac.kr/bme/professor/professor01.do?mode=view&amp;key=LZStrEwBgjMYuDMQ%20&amp;pager.offset=0&amp;pagerLimit=10" target="_blank" rel="noopener noreferrer"><span class="ko">학과 교수 소개</span><span class="en">Department Faculty Page</span></a>
+              </p>
+              </div>
             </div>
           </div>
           <div class="prof-cv">
@@ -153,14 +162,14 @@
               </span>
               <span>
                 <span class="ko">충남대학교 스마트농업시스템기계공학과 교수</span>
-                <span class="en">Professor, Smart Agriculture Systems Mechanical Engineering, CNU</span>
+                <span class="en">Professor, Department of Smart Agriculture Systems Machinery Engineering, Chungnam National University</span>
               </span>
             </div>
+          </div>
           </div>
         </section>
         <section id="postdoc">
           <h2>Postdoctoral Researcher</h2>
-          <div class="h2-en ko">박사후연구원</div>
           <div class="member-list">
             <div class="member">
               <div class="member-head">
@@ -174,11 +183,11 @@
               </div>
               <div class="member-body">
                 <ul>
-                  <li>인공지능 기반 외래 침입종 발생 위험 예측 모델 개발</li>
-                  <li>IoT 센서 기반 농산물 가공 시스템 모니터링 및 고도화</li>
+                  <li><span class="ko">인공지능 기반 외래 침입종 발생 위험 예측 모델 개발</span><span class="en">Development of artificial intelligence-based models for predicting the occurrence risk of invasive alien species</span></li>
+                  <li><span class="ko">IoT 센서 기반 농산물 가공 시스템 모니터링 및 고도화</span><span class="en">Monitoring and advancement of agricultural product processing systems based on IoT sensors</span></li>
                 </ul>
                 <div class="m-pub">
-                  <span class="lbl">대표논문</span>
+                  <span class="lbl"><span class="ko">대표논문</span><span class="en">Selected publication</span></span>
                   Development of a predictive model for soil temperature and its application to species distribution modeling of ant species in South Korea
                 </div>
               </div>
@@ -195,11 +204,11 @@
               </div>
               <div class="member-body">
                 <ul>
-                  <li>토마토뿔나방의 생물적 특성 구명 및 방제기술 개발</li>
-                  <li>최적 종분포 모델링 알고리즘 선정 표준화 프로세스 개발</li>
+                  <li><span class="ko">토마토뿔나방의 생물적 특성 구명 및 방제기술 개발</span><span class="en">Identification of biological characteristics and development of control technologies for the tomato leafminer (Tuta absoluta)</span></li>
+                  <li><span class="ko">최적 종분포 모델링 알고리즘 선정 표준화 프로세스 개발</span><span class="en">Development of a standardized process for selecting optimal species distribution modeling (SDM) algorithms</span></li>
                 </ul>
                 <div class="m-pub">
-                  <span class="lbl">대표논문</span>
+                  <span class="lbl"><span class="ko">대표논문</span><span class="en">Selected publication</span></span>
                   Review of CLIMEX and MaxEnt for studying species distribution in South Korea
                 </div>
               </div>
@@ -216,11 +225,11 @@
               </div>
               <div class="member-body">
                 <ul>
-                  <li>포도피어슨병의 매개충에 대한 생태적 위험평가</li>
-                  <li>시계열 데이터 기반 인공지능 종분포 모델링 기술 개발</li>
+                  <li><span class="ko">포도피어슨병의 매개충에 대한 생태적 위험평가</span><span class="en">Ecological risk assessment of insect vectors of Pierce's disease</span></li>
+                  <li><span class="ko">시계열 데이터 기반 인공지능 종분포 모델링 기술 개발</span><span class="en">Development of artificial intelligence-based species distribution modeling (SDM) technology using time-series data</span></li>
                 </ul>
                 <div class="m-pub">
-                  <span class="lbl">대표논문</span>
+                  <span class="lbl"><span class="ko">대표논문</span><span class="en">Selected publication</span></span>
                   Risk monitoring of pine wilt disease based on semi-dynamic spatial prediction in South Korea
                 </div>
               </div>
@@ -229,7 +238,6 @@
         </section>
         <section id="phd">
           <h2>Doctoral Course</h2>
-          <div class="h2-en ko">박사과정 &middot; 석박통합과정</div>
           <div class="member-list">
             <div class="member">
               <div class="member-head">
@@ -243,11 +251,11 @@
               </div>
               <div class="member-body">
                 <ul>
-                  <li>자율형 한우 스마트 축사 통합관리를 위한 모델 개발</li>
-                  <li>무인자율형 젖소 사양 관리를 위한 예측 모델 개발</li>
+                  <li><span class="ko">자율형 한우 스마트 축사 통합관리를 위한 모델 개발</span><span class="en">Development of models for integrated management of autonomous smart barns for Hanwoo (Korean cattle)</span></li>
+                  <li><span class="ko">무인자율형 젖소 사양 관리를 위한 예측 모델 개발</span><span class="en">Development of predictive models for unmanned autonomous feeding management of dairy cattle</span></li>
                 </ul>
                 <div class="m-pub">
-                  <span class="lbl">대표논문</span>
+                  <span class="lbl"><span class="ko">대표논문</span><span class="en">Selected publication</span></span>
                   Development of individual models for predicting cow milk production for real-time monitoring
                 </div>
               </div>
@@ -264,11 +272,11 @@
               </div>
               <div class="member-body">
                 <ul>
-                  <li>밀 재배 안정성 향상을 위한 국내 밀 재배적지 공간 분석</li>
-                  <li>검역 병원체의 매개충에 대한 생태적 위험 평가</li>
+                  <li><span class="ko">밀 재배 안정성 향상을 위한 국내 밀 재배적지 공간 분석</span><span class="en">Spatial analysis of suitable wheat cultivation areas in South Korea to improve wheat production stability</span></li>
+                  <li><span class="ko">검역 병원체의 매개충에 대한 생태적 위험 평가</span><span class="en">Ecological risk assessment of insect vectors of quarantine pathogens</span></li>
                 </ul>
                 <div class="m-pub">
-                  <span class="lbl">대표논문</span>
+                  <span class="lbl"><span class="ko">대표논문</span><span class="en">Selected publication</span></span>
                   Regional predictions of subterranean ant Pheidole megacephala distribution based on a global ensemble species distribution model incorporating climate and soil temperature
                 </div>
               </div>
@@ -285,11 +293,11 @@
               </div>
               <div class="member-body">
                 <ul>
-                  <li>Bio-ICT 활용 한우/젖소 개체 식별 및 지능형 사양관리 솔루션 상용화</li>
-                  <li>IoT 센서 기반 농산물 가공 시스템 모니터링 및 고도화</li>
+                  <li><span class="ko">Bio-ICT 활용 한우/젖소 개체 식별 및 지능형 사양관리 솔루션 상용화</span><span class="en">Commercialization of individual identification and intelligent feeding management solutions for Hanwoo and dairy cattle using Bio-ICT</span></li>
+                  <li><span class="ko">IoT 센서 기반 농산물 가공 시스템 모니터링 및 고도화</span><span class="en">Monitoring and advancement of agricultural product processing systems based on IoT sensors</span></li>
                 </ul>
                 <div class="m-pub">
-                  <span class="lbl">대표논문</span>
+                  <span class="lbl"><span class="ko">대표논문</span><span class="en">Selected publication</span></span>
                   Multi-Stage Data Processing for Enhancing Korean Cattle (Hanwoo) Weight Estimations by Automated Weighing Systems
                 </div>
               </div>
@@ -298,7 +306,6 @@
         </section>
         <section id="ms">
           <h2>Master&#39;s Course</h2>
-          <div class="h2-en ko">석사과정 &middot; 학석통합과정</div>
           <div class="member-list">
             <div class="member">
               <div class="member-head">
@@ -312,11 +319,11 @@
               </div>
               <div class="member-body">
                 <ul>
-                  <li>축우 예측 모델 및 의사결정지원 모델 개발</li>
-                  <li>식물 이차 대사 산물 네트워크 구축 및 AI 기반 모델 개발</li>
+                  <li><span class="ko">축우 예측 모델 및 의사결정지원 모델 개발</span><span class="en">Development of predictive and decision-support models for cattle</span></li>
+                  <li><span class="ko">식물 이차 대사 산물 네트워크 구축 및 AI 기반 모델 개발</span><span class="en">Construction of plant secondary metabolite networks and development of AI-based models</span></li>
                 </ul>
                 <div class="m-pub">
-                  <span class="lbl">대표논문</span>
+                  <span class="lbl"><span class="ko">대표논문</span><span class="en">Selected publication</span></span>
                   Analysis of the spread distance of pine wilt disease based on a high volume of spatiotemporal data recording of infected trees
                 </div>
               </div>
@@ -325,7 +332,6 @@
         </section>
         <section id="bs">
           <h2>Undergraduate Researcher</h2>
-          <div class="h2-en ko">학부연구생</div>
           <div class="member-list">
             <div class="member">
               <div class="member-head">
@@ -339,11 +345,11 @@
               </div>
               <div class="member-body">
                 <ul>
-                  <li>인공지능 기반 종분포 모델 개발을 위한 DB 구축</li>
-                  <li>IoT 센서 기반 농산물 가공 시스템 모니터링 및 고도화</li>
+                  <li><span class="ko">인공지능 기반 종분포 모델 개발을 위한 DB 구축</span><span class="en">Construction of a DB for developing artificial intelligence-based species distribution models</span></li>
+                  <li><span class="ko">IoT 센서 기반 농산물 가공 시스템 모니터링 및 고도화</span><span class="en">Monitoring and advancement of agricultural product processing systems based on IoT sensors</span></li>
                 </ul>
                 <div class="m-pub">
-                  <span class="lbl">대표논문</span>
+                  <span class="lbl"><span class="ko">대표논문</span><span class="en">Selected publication</span></span>
                   Development and Optimization of a Real-Time Monitoring System of Small-Scale Multi-Purpose Juice Extractor
                 </div>
               </div>
@@ -352,9 +358,20 @@
         </section>
         <section id="alumni">
           <h2>Alumni</h2>
-          <div class="h2-en ko">졸업생</div>
           <div class="alumni-item">
-            <span class="a-role">석사</span>
+            <span class="a-role"><span class="ko">석사</span><span class="en">M.S.</span></span>
+            <span>김도균 <span class="a-name-en">Do-Gyun Kim</span></span>
+          </div>
+          <div class="alumni-item">
+            <span class="a-role"><span class="ko">석사</span><span class="en">M.S.</span></span>
+            <span>심준용 <span class="a-name-en">Joon-Yong Shim</span></span>
+          </div>
+          <div class="alumni-item">
+            <span class="a-role"><span class="ko">석사</span><span class="en">M.S.</span></span>
+            <span>김세현 <span class="a-name-en">Se-Hyun Kim</span></span>
+          </div>
+          <div class="alumni-item">
+            <span class="a-role"><span class="ko">석사</span><span class="en">M.S.</span></span>
             <span>김태현 <span class="a-name-en">Tae-Hyeon Kim</span></span>
           </div>
         </section>
@@ -370,7 +387,7 @@
     </div>
     <p>
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+      <span class="en">Department of Smart Agriculture Systems Machinery Engineering, Chungnam National University</span>
     </p>
     <p>
       <span class="ko">(34134) 대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</span>
@@ -406,6 +423,7 @@
     function onScroll() {
       var y = window.scrollY + 160, current = null;
       targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t.link; });
+      if (targets.length && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = targets[targets.length - 1].link;   // 바닥에 닿으면 마지막 섹션 (짧은 끝 섹션은 기준선까지 못 올라온다)
       links.forEach(function (a) { a.classList.remove('active'); });
       if (current) current.classList.add('active');
     }

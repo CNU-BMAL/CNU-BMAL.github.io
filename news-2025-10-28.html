@@ -45,7 +45,7 @@
   <a class="brand" href="index.html">
     <span class="brand-affil">
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Smart Agriculture Systems Mechanical Engineering, CNU</span>
+      <span class="en">Smart Agriculture Systems Machinery Engineering, CNU</span>
     </span>
     <strong>
       <span class="ko">바이오시스템 모델링 및 분석 실험실</span>
@@ -71,7 +71,7 @@
     <div style="padding-bottom: 96px;">
       <a class="a-back" href="news.html">&larr; <span class="ko">소식 목록</span><span class="en">Back to News</span></a>
       <div class="a-meta">
-        <span class="n-cat">선정</span>
+        <span class="n-cat"><span class="ko">성과</span><span class="en">Achievement</span></span>
         <span class="n-date">2025.10.28</span>
       </div>
       <h1 class="a-title">충남대 농업생명과학대학, &#x27;세계 상위 2% 연구자&#x27;에 총 6명 선정</h1>
@@ -81,6 +81,7 @@
       </div>
       <div class="a-img"><img src="assets/img/news/2025-10-28.png" alt="충남대 농업생명과학대학, &#x27;세계 상위 2% 연구자&#x27;에 총 6명 선정"></div>
       <div class="a-body">
+          <p class="en"><em>Original article in Korean.</em></p>
           <p>생애 업적 기준 우수연구자 - 조병관, 김창수 교수 선정</p>
           <p>2024년 업적 기준 우수연구자 - 조병관, 박범진, 정사무엘, 김희택, 이왕희 교수 선정</p>
           <p>&quot;미래 농업을 선도하는 NO.1 농업생명과학대학으로 도약&quot;</p>
@@ -105,7 +106,7 @@
     </div>
     <p>
       <span class="ko">충남대학교 스마트농업시스템기계공학과</span>
-      <span class="en">Chungnam National University Smart Agriculture Systems Mechanical Engineering Department</span>
+      <span class="en">Department of Smart Agriculture Systems Machinery Engineering, Chungnam National University</span>
     </p>
     <p>
       <span class="ko">(34134) 대전광역시 유성구 대학로 99 &middot; 농업생명과학대학 2호관(E10-2) 2107호</span>
@@ -141,6 +142,7 @@
     function onScroll() {
       var y = window.scrollY + 160, current = null;
       targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t.link; });
+      if (targets.length && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = targets[targets.length - 1].link;   // 바닥에 닿으면 마지막 섹션 (짧은 끝 섹션은 기준선까지 못 올라온다)
       links.forEach(function (a) { a.classList.remove('active'); });
       if (current) current.classList.add('active');
     }
